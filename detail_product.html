@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="./pages/product_group/assets/css/product_group.css"
+    />
+    
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/fonts/fontawesome-free-6.1.1-web/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- Main Header -->
+      <header class="header">
+        <div class="grid wide">
+          <div class="row">
+            <div class="col l-0 m-3 c-3">
+              <!-- BarMenu on mobile & tablet -->
+              <div class="bar__menu-symbol">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+              <div class="bar__menu-modal"></div>
+              <div class="bar__menu">
+                <ul class="bar__menu-list">
+                  <li class="bar__menu-item">
+                    <h2 class="bar__menu-heading">Menu</h2>
+                  </li>
+                  <li class="bar__menu-item bar__menu-logo">
+                    <img
+                      src="https://mcdn.nhanh.vn/store2/71503/logo_1648529413_Green Quality Tea Instagram Post.png"
+                      alt=""
+                      class="bar__menu-logo-img"
+                    />
+                  </li>
+                  <li class="bar__menu-item">
+                    <a href="./index.html" class="bar__menu-item-link"
+                      >Trang chủ</a
+                    >
+                  </li>
+                  <li class="bar__menu-item">
+                    <a href="./all_product.html" class="bar__menu-item-link">
+                      Sản phẩm
+                      <span class="bar__menu-product"
+                        ><i
+                          class="bar__menu-product-icon-right fa-solid fa-angle-right"
+                        ></i
+                      ></span>
+                    </a>
+                  </li>
+                  <li class="bar__menu-item">
+                    <a href="./pages/news/new_feed.html" class="bar__menu-item-link"
+                      >Tin tức</a
+                    >
+                  </li>
+                  <li class="bar__menu-item">
+                    <a
+                      href="./pages/contact/contact.html"
+                      class="bar__menu-item-link"
+                      >Liên hệ</a
+                    >
+                  </li>
+                  <li class="bar__menu-item">
+                    <a href="#" class="bar__menu-item-link">Sale up 50%</a>
+                  </li>
+                </ul>
+                <!-- bar__menu-product-list -->
+                <ul class="bar__menu-product-list">
+                  <li class="bar__menu-product-item">
+                    <!-- <a href="#" class="bar__menu-product-item-link">Hoa quả tươi</a> -->
+                    <h2 class="bar__menu-product-heading">
+                      <span class="bar__menu-product-left"
+                        ><i
+                          class="bar__menu-product-icon-left fa-solid fa-angle-left"
+                        ></i
+                      ></span>
+                      Sản phẩm
+                    </h2>
+                  </li>
+  
+                  <li class="bar__menu-product-item">
+                    <a href="./vegetables_product.html" class="bar__menu-product-item-link"
+                      >Rau củ</a
+                    >
+                  </li>
+                  <li class="bar__menu-product-item">
+                    <a
+                      href="./fruits_product.html"
+                      class="bar__menu-product-item-link"
+                      >Hoa quả tươi</a
+                    >
+                  </li>
+                  <li class="bar__menu-product-item">
+                    <a
+                      href="./freshfoods_product.html"
+                      class="bar__menu-product-item-link"
+                      >Thực phẩm tươi sống</a
+                    >
+                  </li>
+                  <li class="bar__menu-product-item">
+                    <a
+                      href="./cereals_product.html"
+                      class="bar__menu-product-item-link"
+                      >Ngũ cốc</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col l-12 m-9 c-9">
+              <div class="grid">
+                <div class="row no-gutters">
+                  <div class="col l-2 m-6 c-6">
+                    <div class="header__logo">
+                      <a href="./index.html" class="header__logo-link">
+                        <img
+                          src="https://mcdn.nhanh.vn/store2/71503/logo_1648529413_Green Quality Tea Instagram Post.png"
+                          alt=""
+                          class="header__logo-img"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col l-10 m-6 c-6">
+                    <nav class="header__nav">
+                      <ul class="header__nav-list-item hide-on-mobile-tablet">
+                        <li class="header__nav-item">
+                          <a
+                            href="./index.html"
+                            class="header__nav-item-link"
+                            >Trang chủ</a
+                          >
+                        </li>
+                        <li class="header__nav-item">
+                          <a href="./all_product.html" class="header__nav-item-link">
+                            <span>Sản phẩm</span>
+                            <i
+                              class="header__nav-icon-down fa-solid fa-caret-down"
+                            ></i>
+                          </a>
+                          <ul class="header__options-product">
+                            <li class="header__product-item">
+                              <a href="./vegetables_product.html" class="header__product-link"
+                                >Rau củ</a
+                              >
+                            </li>
+                            <li class="header__product-item">
+                              <a
+                                href="./fruits_product.html"
+                                class="header__product-link"
+                                >Hoa quả tươi</a
+                              >
+                            </li>
+                            <li class="header__product-item">
+                              <a
+                                href="./freshfoods_product.html"
+                                class="header__product-link"
+                                >Thực phẩm tươi sống</a
+                              >
+                            </li>
+                            <li class="header__product-item">
+                              <a
+                                href="./cereals_product.html"
+                                class="header__product-link"
+                                >Ngũ cốc</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="header__nav-item">
+                          <a
+                            href="./pages/news/new_feed.html"
+                            class="header__nav-item-link"
+                            >Tin tức</a
+                          >
+                        </li>
+                        <li class="header__nav-item">
+                          <a
+                            href="./pages/contact/contact.html"
+                            class="header__nav-item-link"
+                            >Liên hệ</a
+                          >
+                        </li>
+                        <li class="header__nav-item">
+                          <a href="" class="header__nav-item-link"
+                            >Sale up to 50%</a
+                          >
+                        </li>
+                      </ul>
+  
+                      <ul class="header__nav-list-icon">
+                        <li class="header__nav-icon">
+                          <a href="" class="header__nav-icon-link"
+                            ><i class="fa-solid fa-magnifying-glass"></i
+                          ></a>
+                          <div class="header__search">
+                            <input
+                              type="text"
+                              placeholder="Tìm kiếm..."
+                              class="header__search-input"
+                            />
+                            <i
+                              class="header__search-icon-mini fa-solid fa-magnifying-glass"
+                            ></i>
+                            <ul class="header__search-history">
+                              <li class="header__search-history-item">Web</li>
+                              <li class="header__search-history-item">Ranking</li>
+                              <li class="header__search-history-item">
+                                Web ranking
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="header__nav-icon">
+                          <a
+                            href=""
+                            class="header__nav-icon-link user-nav-icon-js"
+                            ><i class="fa-solid fa-user-plus"></i
+                          ></a>
+                          <div class="header__user">
+                            <a
+                              href="./pages/user/sign_in.html"
+                              class="btn btn--primary login-btn-js"
+                              >Đăng nhập</a
+                            >
+                            <a
+                              href="./pages/user/sign_up.html"
+                              class="btn register-btn-js"
+                              >Đăng ký</a
+                            >
+                          </div>
+                        </li>
+                        <li class="header__nav-icon">
+                          <a href="./shopping_cart.html" class="header__nav-icon-link header__bag-js"><i class="fa-solid fa-bag-shopping"></i></a>
+                          <span class="header__bag-label"></span>
+                          <!-- ********** Notify detail bag ********** -->
+                          <div class="bag-content">
+                              <!-- no product in cart -->
+                              <p class="header__bag-description">Giỏ hàng không có sản phẩm !</p>
+                              <!-- has product in cart -->
+                              <div class="bag-content-wrapper">
+                                  <div class="bag-content-heading">
+                                      <p>Giỏ hàng <b>3</b> sản phẩm !</p>
+                                  </div>
+                                  <div class="bag-content-body">
+                                      <ul class="bag-content-list">
+                                          <!-- Render product in bag -->
+                                      </ul>
+                                  </div>
+                                  <div class="bag-content-footer">
+                                      <p class="bag-content-review">
+                                          <span>Tổng cộng: </span>
+                                          <span class="bag-content-total">220000₫</span>
+                                      </p>
+                                      <a href="./check_out.html" class="btn btn--primary bag-content-btn">Tiến hành thanh toán</a>
+                                  </div>
+                              </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+  
+      <!-- Vegetables group -->
+      <div>
+        <!--######## chi tiết sản phẩm ########-->
+        <div class="detail-product-render">
+          <!-- render detail product-->
+        </div>
+        <!--######## sản phẩm gợi ý ########-->
+        <div class="list__product">
+          <header class="list__product-header">
+              <h2 class="list__product-heading">SẢN PHẨM GỢI Ý</h2>
+          </header>
+          
+          <div class="grid wide">
+            <div class="row product-suggestion__slick-slider relative-product-render">
+                <!-- render relative product-->
+            </div>
+          </div> 
+        </div> 
+        <!--**************** Sản phẩm đã xem ****************-->
+        <div class="list__product">
+          <header class="list__product-header">
+              <h2 class="list__product-heading">SẢN PHẨM ĐÃ XEM</h2>
+          </header>
+          
+          <div class="grid wide">
+            <div class="row product-suggestion__slick-slider viewed-product-render">
+                <!-- render viewed product--> 
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Footer -->
+      <footer class="footer">
+        <!-- Register discount -->
+        <div class="register__discount">
+          <div class="grid wide">
+            <div class="register__discount-wrap">
+              <h2 class="register__heading">Đăng kí nhận tin khuyến mãi</h2>
+              <div class="register__group">
+                <input
+                  type="text"
+                  class="register__input"
+                  placeholder="Nhập Email của bạn"
+                />
+                <button class="btn btn--primary register__btn">Đăng ký</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Main Footer -->
+        <div class="grid wide wide__footer grid__padding">
+          <div class="row">
+            <div class="col l-4 m-4 c-12">
+              <div class="footer__contact">
+                <img
+                  src="https://mcdn.nhanh.vn/store2/71503/logo_1648529413_Green Quality Tea Instagram Post.png"
+                  alt=""
+                  class="footer__contact-logo"
+                />
+                <ul class="footer__contact-list">
+                  <li class="footer__contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>30 Phạm Văn Đồng Cầu Giấy, Hà Nội</span>
+                  </li>
+                  <li class="footer__contact-item">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <span>1900.2812</span>
+                  </li>
+                  <li class="footer__contact-item">
+                    <i class="fa-solid fa-square-envelope"></i>
+                    <span>ngochop2704@gmail.com</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col l-8 m-8 c-12">
+              <div class="grid">
+                <div class="footer__sub">
+                  <div class="row no-gutters">
+                    <div class="col l-4 m-4 c-12">
+                      <h2 class="footer__sub-heading">
+                        CẨM NANG SỬ DỤNG
+                        <i
+                          class="footer__plus-icon fa-solid fa-plus hide-on-pc-tablet"
+                        ></i>
+                      </h2>
+  
+                      <ul class="footer__sub-list hide-on-mobile">
+                        <li class="footer__sub-item">
+                          <a href="#">Trang chủ</a>
+                        </li>
+                        <li class="footer__sub-item">
+                          <a href="#">Giới thiệu</a>
+                        </li>
+                        <li class="footer__sub-item"><a href="#">Sản phẩm</a></li>
+                        <li class="footer__sub-item"><a href="#">Tin tức</a></li>
+                        <li class="footer__sub-item"><a href="#">Liên hệ</a></li>
+                      </ul>
+                    </div>
+                    <div class="col l-4 m-4 c-12">
+                      <h2 class="footer__sub-heading">
+                        CHÍNH SÁCH
+                        <i
+                          class="footer__plus-icon fa-solid fa-plus hide-on-pc-tablet"
+                        ></i>
+                      </h2>
+  
+                      <ul class="footer__sub-list hide-on-mobile">
+                        <li class="footer__sub-item">
+                          <a href="#">Trang chủ</a>
+                        </li>
+                        <li class="footer__sub-item">
+                          <a href="#">Giới thiệu</a>
+                        </li>
+                        <li class="footer__sub-item"><a href="#">Sản phẩm</a></li>
+                        <li class="footer__sub-item"><a href="#">Tin tức</a></li>
+                        <li class="footer__sub-item"><a href="#">Liên hệ</a></li>
+                      </ul>
+                    </div>
+                    <div class="col l-4 m-4 c-12">
+                      <h2 class="footer__sub-heading">
+                        DỊCH VỤ
+                        <i
+                          class="footer__plus-icon fa-solid fa-plus hide-on-pc-tablet"
+                        ></i>
+                      </h2>
+  
+                      <ul class="footer__sub-list hide-on-mobile">
+                        <li class="footer__sub-item">
+                          <a href="#">Trang chủ</a>
+                        </li>
+                        <li class="footer__sub-item">
+                          <a href="#">Giới thiệu</a>
+                        </li>
+                        <li class="footer__sub-item"><a href="#">Sản phẩm</a></li>
+                        <li class="footer__sub-item"><a href="#">Tin tức</a></li>
+                        <li class="footer__sub-item"><a href="#">Liên hệ</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- <div class="footer__sub"></div> -->
+            </div>
+          </div>
+        </div>
+  
+        <div class="footer__bottom">
+          <span>Thiết kế web bởi</span>
+          <img src="http://t0307.store.nhanh.vn/images/favicon.ico" alt="" />
+          <b> NHanh.vn </b>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Modal Layout -->
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__body">
+          <!--Modal when click on cart icon-->
+          <div class="dialog__cart">
+              <button class="btn dialog__close">x</button>
+              <div class="dialog__content">
+                <!-- Render infor in dialog box-->
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script src="./assets/javascript/main.js"></script>
+    <!-- <script src="./assets/javascript/jquery.picZoomer.js"></script>  "ngay chỗ này gọi file script này sẽ bị lỗi nên phải gọi nó với promise"  -->
+
+    <script type="text/javascript">
+      var productsViewed = [];
+      var relativeProducts = [];
+      var random = 0;
+      var randomPrev;
+      var url = "http://localhost:3000/products";
+      fetch(url)
+        .then((res) => res.json())
+        .then((products) => {
+          //************************ handle render detail product ************************\\
+          const detailProduct = products.find((product) =>
+            location.href.includes(`id=${product.id}#`)
+          );
+          // change title refer on products
+          document.querySelector('head title').textContent = detailProduct.name;
+
+          // change detail of product refer on products
+          document.querySelector(".detail-product-render").innerHTML = `
+            <!-- header-body -->
+            <div class="news-header">
+              <h2 class="news-heading">${detailProduct.name}</h2>
+              <ul class="news-header-list">
+                <li class="news-header-item">
+                  <a href="./index.html" class="news-header-link">Trang chủ</a>
+                  <i class="fa-solid fa-angle-right"></i>
+                </li>
+                <li class="news-header-item">
+                  <a href="./all_product.html" class="news-header-link news-header-label">Sản phẩm</a>
+                  <i class="fa-solid fa-angle-right"></i>
+                </li>
+                <li class="news-header-item">
+                  <a
+                    href="./${detailProduct.linkGroup}.html"
+                    class="news-header-link news-header-label"
+                    >${detailProduct.category}</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Product Details-->
+            <div class="grid wide grid__padding">
+              <div class="row">
+                <!-- zoom product image -->
+                <div class="col l-6 m-6 c-12">
+                  <div class="img-zoom-container">
+                    <div class="img-zoom-lens">
+                      <div class="picZoomCursor-ico"></div>
+                    </div>
+                    <img id="myimage" src="${detailProduct.image}" />
+                    <div id="myresult" class="img-zoom-result"></div>
+                  </div>
+                  <ul class="piclist">
+                    <li class="pic-item--active">
+                      <img src="${detailProduct.subImages[0]}" alt="" />
+                    </li>
+                    <li>
+                      <img src="${detailProduct.subImages[1]}" alt="" />
+                    </li>
+                    <li>
+                      <img src="${detailProduct.subImages[2]}" alt="" />
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="col l-6 m-6 c-12">
+                  <h3 class="product__detail-name">${detailProduct.name}</h3>
+                  <div class="product__detail-overview">
+                    <p class="product__detail-brand">
+                      Thương hiệu: <span>Đang cập nhật</span>
+                    </p>
+                    |
+                    <p class="product__detail-status">Tình trạng: <span>Còn hàng</span></p>
+                  </div>
+                  <div class="product__detail-rating">
+                    <i class="product__detail-gold fa-solid fa-star"></i>
+                    <i class="product__detail-gold fa-solid fa-star"></i>
+                    <i class="product__detail-gold fa-solid fa-star"></i>
+                    <i class="product__detail-gold fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+
+                  <p class="product__detail-price product__detail-price--current">${Number.isInteger(detailProduct.currentPrice) ? detailProduct.currentPrice.toLocaleString()+'₫' : detailProduct.currentPrice}</p>
+                  <p class="product__detail-price product__detail-price--old">${detailProduct.oldPrice.toLocaleString() && detailProduct.oldPrice.toLocaleString()+'₫'}</p>
+
+                  <div class="product__detail-option">
+                    <p>Kích thước</p>
+                    <button class="btn product__detail-btn-classify">
+                      ${detailProduct.sizes[0]}
+                    </button>
+                    <button class="btn product__detail-btn-classify">
+                      ${detailProduct.sizes[1]}
+                    </button>
+                  </div>
+                  <p class="product__detail-brief">Chưa có mô tả cho sản phẩm này.</p>
+                  <div class="product__detail-quantity">
+                    <span>Số lượng:</span>
+                    <button class="btn product__detail-btn-decrease">-</button>
+                    <input
+                      type="number"
+                      class="product__detail-number"
+                      value="${detailProduct.quantity}"
+                    />
+                    <button class="btn product__detail-btn-increase">+</button>
+                  </div>
+                  <a href="#" class="btn btn--primary product__detail-btn-add" onclick="addShoppingCart(${detailProduct.id}, '${detailProduct.name}', ${Number.isInteger(detailProduct.currentPrice) ? detailProduct.currentPrice : `'${detailProduct.currentPrice}'`}, '${detailProduct.image}', ${detailProduct.quantity}, true)">
+                    Thêm vào giỏ hàng
+                  </a>
+                  <p class="product__detail-call">
+                    Gọi đặt mua:
+                    <a href="tel:1900.2812">1900.2812</a>
+                    để nhanh chóng đặt hàng.
+                  </p>
+                </div>
+                <div class="col l-12">
+                  <img
+                    src="https://traffic-edge38.cdn.vncdn.io/nvn/ncdn/store2/71503/bn/Green_Quality_Tea_Instagram_Post.png"
+                    alt=""
+                    class="product__detail-banner"
+                  />
+                </div>
+                <ul class="product__detail-tab">
+                  <li class="product__detail-tab-item product__detail-tab-item--active">
+                    <a href="#product-overview" class="product__detail-tab-link">
+                      Mô tả sản phẩm
+                      <span>&#xf078;</span>
+                    </a>
+                  </li>
+                  <li class="product__detail-tab-item">
+                    <a href="#product-detail" class="product__detail-tab-link">
+                      Chi tiết sản phẩm
+                      <span>&#xf077;</span>
+                    </a>
+                  </li>
+                  <li class="product__detail-tab-item">
+                    <a href="#product-comment" class="product__detail-tab-link">
+                      Bình luận sản phẩm
+                      <span>&#xf077;</span>
+                    </a>
+                  </li>
+                </ul>
+                <div class="col l-12 m-12 c-12">
+                  <div class="product__detail-tab-content">
+                    <div
+                      id="product-overview"
+                      class="product__detail-tab-descript tab-content-pane tab-content-pane--active"
+                    >
+                      <p ${detailProduct.standards[0] ? '' :  'style="display: none;"'}><b>Tiêu chuẩn chất lượng:</b> ${detailProduct.standards.length < 2 ? detailProduct.standards[0] : ''}</p>
+                      <ul class="product__detail-standard" ${detailProduct.standards.length < 2 || detailProduct.standards[0] === '' ? 'style="display: none;"' : ''}>
+                        <li ${detailProduct.standards[0] ? '' :  'style="display: none;"'}>${detailProduct.standards[0]}</li>
+                        <li ${detailProduct.standards[1] ? '' :  'style="display: none;"'}>${detailProduct.standards[1]}</li>
+                        <li ${detailProduct.standards[2] ? '' :  'style="display: none;"'}>${detailProduct.standards[2]}</li>
+                      </ul>
+
+                      <p ${detailProduct.features[0] ? '' :  'style="display: none;"'}><b>Đặc điểm:</b> ${detailProduct.features.length < 2 ? detailProduct.features[0] : ''}</p>
+                      <ul class="product__detail-feature" ${detailProduct.features.length < 2 || detailProduct.features[0] === '' ? 'style="display: none;"' : ''}>
+                        <li ${detailProduct.features[0] ? '' :  'style="display: none;"'}>${detailProduct.features[0]}</li>
+                        <li ${detailProduct.features[1] ? '' :  'style="display: none;"'}>${detailProduct.features[1]}</li>
+                        <li ${detailProduct.features[2] ? '' :  'style="display: none;"'}>${detailProduct.features[2]}</li>
+                      </ul>
+                      <p ${detailProduct.details ? '' :  'style="display: none;"'}>
+                        <b>${detailProduct.name}:</b> ${detailProduct.details}
+                      </p>
+                    </div>
+                    <div
+                      id="product-detail"
+                      class="product__detail-tab-descript tab-content-pane"
+                    >
+                      <p ${detailProduct.standards[0] ? '' :  'style="display: none;"'}><b>Tiêu chuẩn chất lượng:</b> ${detailProduct.standards.length < 2 ? detailProduct.standards[0] : ''}</p>
+                      <ul class="product__detail-standard" ${detailProduct.standards.length < 2 || detailProduct.standards[0] === '' ? 'style="display: none;"' : ''}>
+                        <li ${detailProduct.standards[0] ? '' :  'style="display: none;"'}>${detailProduct.standards[0]}</li>
+                        <li ${detailProduct.standards[1] ? '' :  'style="display: none;"'}>${detailProduct.standards[1]}</li>
+                        <li ${detailProduct.standards[2] ? '' :  'style="display: none;"'}>${detailProduct.standards[2]}</li>
+                      </ul>
+
+                      <p ${detailProduct.features[0] ? '' :  'style="display: none;"'}><b>Đặc điểm:</b> ${detailProduct.features.length < 2 ? detailProduct.features[0] : ''}</p>
+                      <ul class="product__detail-feature" ${detailProduct.features.length < 2 || detailProduct.features[0] === '' ? 'style="display: none;"' : ''}>
+                        <li ${detailProduct.features[0] ? '' :  'style="display: none;"'}>${detailProduct.features[0]}</li>
+                        <li ${detailProduct.features[1] ? '' :  'style="display: none;"'}>${detailProduct.features[1]}</li>
+                        <li ${detailProduct.features[2] ? '' :  'style="display: none;"'}>${detailProduct.features[2]}</li>
+                      </ul>
+                      <p ${detailProduct.details ? '' :  'style="display: none;"'}>
+                        <b>${detailProduct.name}:</b> ${detailProduct.details}
+                      </p>
+                    </div>
+                    <div
+                      id="product-comment"
+                      class="product__detail-tab-comment tab-content-pane"
+                    >
+                      <iframe float="left" name="f26cd80a70cbccc" data-testid="fb:comments Facebook Social Plugin" title="fb:comments Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v9.0/plugins/comments.php?app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df2f66914a8676b%26domain%3Dt0307.store.nhanh.vn%26is_canvas%3Dfalse%26origin%3Dhttp%253A%252F%252Ft0307.store.nhanh.vn%252Ff1008fa23d16448%26relation%3Dparent.parent&amp;color_scheme=light&amp;container_width=0&amp;height=100&amp;href=http%3A%2F%2Ft0307.store.nhanh.vn%2Fba-roi-heo-rut-suon-c.p-p37605609.html&amp;locale=en_US&amp;numposts=5&amp;sdk=joey&amp;version=v9.0&amp;" class="" style="border: none; visibility: visible;height: 214px;"></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>             
+          `;
+
+          // //************************ handle render relative products ************************\\
+          var relativeProducts = products.filter(product => product.cat_id === detailProduct.cat_id && product.id !== detailProduct.id);
+          document.querySelector('.relative-product-render').innerHTML = renderProduct(relativeProducts).join('');
+
+          //************************ handle render viewed products ************************\\
+          for(var i = 0; i < 8; i++) {
+                    do {
+                        randomPrev = random;
+                        random = Math.floor(Math.random() * products.length);
+                    }
+                    while(randomPrev === random) {
+                        random = Math.floor(Math.random() * products.length);
+                    }
+                    productsViewed.push(products[random]);
+                }
+          document.querySelector('.viewed-product-render').innerHTML = renderProduct(productsViewed).join('');     
+          
+          //############ Slick slider product suggestion and viewed ############\\
+          if(document.querySelector('.product-suggestion__slick-slider')) {
+            $(document).ready(function() {
+              $('.product-suggestion__slick-slider').slick({
+                  slidesToShow: 4,
+                  autoplay: true,
+                  infinite: true,
+                  autoplaySpeed: 1000,
+                  arrows: false,
+                  responsive: [
+                      {
+                        breakpoint: 1024,
+                        settings: {
+                          slidesToShow: 3,
+                          slidesToScroll: 1,
+                        },
+                      },
+                      {
+                        breakpoint: 739,
+                        settings: {
+                          slidesToShow: 2,
+                          slidesToScroll: 1,
+                        },
+                      },
+                    ],
+              });
+            });
+          }
+        })
+        .then(() => {
+          // **************** Handle all manipulate in Product Detail page ****************\\
+          var productDetailsLinks = document.querySelectorAll('.product__detail-tab-link');
+          var productOverview = document.getElementById('product-overview');
+          var productDetail = document.getElementById('product-detail');
+          var productComment = document.getElementById('product-comment');
+          var tabContentPanes = document.querySelectorAll('.tab-content-pane');
+
+          // render and manipulate status, features, info of product
+          productDetailsLinks.forEach((productDetailsLink) => {
+              productDetailsLink.onclick = (e) => {
+                  e.preventDefault(); 
+                  // xóa các element đang active
+                  document.querySelector('.product__detail-tab-item--active span').innerHTML = "&#xf077;";
+                  document.querySelector('.product__detail-tab-item--active').classList.remove('product__detail-tab-item--active');
+                  document.querySelector('.tab-content-pane--active').classList.remove('tab-content-pane--active');
+
+                  // update lại trạng thái active của elment được click
+                  e.target.parentElement.classList.add('product__detail-tab-item--active');
+                  e.target.querySelector('span').innerHTML = "&#xf078;";  
+
+                  tabContentPanes.forEach((tabContentPane) => {
+                      if(e.target.href.includes(tabContentPane.id)) {
+                          tabContentPane.classList.add('tab-content-pane--active');
+                      }
+                  })
+              }
+          });
+
+          // increase, decrease and change quantity products
+          var increaseBtn = document.querySelector('.product__detail-btn-increase');
+          var decreaseBtn = document.querySelector('.product__detail-btn-decrease');
+          var quantityInput = document.querySelector('.product__detail-number');
+          var quantityOrder = 1;
+
+          if(increaseBtn) {
+              increaseBtn.onclick = () => {
+                  quantityOrder++;
+                  quantityInput.value = quantityOrder;
+              }
+          }
+
+          if(decreaseBtn) {
+              decreaseBtn.onclick = () => {
+                  quantityOrder > 0 ? quantityOrder-- : quantityOrder = 0;
+                  quantityInput.value = quantityOrder;
+              }
+          }
+
+          if(quantityInput) {
+              quantityInput.onchange = () => {
+                  quantityOrder = quantityInput.value;
+              }
+          }
+
+          // chosen size of product
+          var classifyBtns = document.querySelectorAll('.product__detail-btn-classify');
+          var isClassify = false;
+
+          classifyBtns.forEach((classifyBtn) => {
+              classifyBtn.onclick = (e) => {
+                  if(e.target.classList.contains('product__detail-btn-classify--chosen')) {
+                      document.querySelector('.product__detail-btn-classify--chosen').classList.remove('product__detail-btn-classify--chosen');
+                  }
+                  else {
+                      if(document.querySelector('.product__detail-btn-classify--chosen')) {
+                          document.querySelector('.product__detail-btn-classify--chosen').classList.remove('product__detail-btn-classify--chosen');
+                      }
+                      e.target.classList.add('product__detail-btn-classify--chosen');
+                  }
+              }
+          });          
+        })
+        .then(() => {
+          var scriptZoomImg = document.createElement("script");
+          scriptZoomImg.src = "./assets/javascript/jquery.picZoomer.js";
+          document.body.appendChild(scriptZoomImg);
+        });
+    </script>
+
+  </body>
+</html>
+
+

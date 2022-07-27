@@ -1,0 +1,172 @@
+
+.news-header {
+    background-image: url(https://mcdn.nhanh.vn/store2/71503/bn/banner_trang_sp.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 62px 0;
+    margin-bottom: 40px;
+    background-size: cover;
+}
+
+.news-heading {
+    margin: 0;
+    font-size: 2.8rem;
+    font-weight: 400;
+    line-height: 3.4rem;
+    color: var(--text-color);
+}
+
+.news-header-list {
+    margin: 0;
+    padding: 15px 0 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.news-header-item i {
+    font-size: 1.4rem;
+    color: #707070;
+    margin-right: 10px;
+}
+
+.news-header-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #707070;
+    font-weight: 300;
+}
+
+.news-header-label {
+    color: var(--primary-color);
+}
+
+
+/* ////////////// */
+.news-header-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: #212529;
+}
+
+.news-header-wrapper:hover {
+    transition: 0.3s;
+    box-shadow: 1px 16px 24px rgb(0 0 0 / 18%);
+}
+
+.news-header-blog {
+    position: relative;
+}
+
+.news-header-img {
+    width: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.news-header-published {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+
+    margin: 0;
+    padding: 10px 0;
+    background-color: #fff;
+    opacity: 0.9;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+}
+
+.news-header-published > b {
+    color: #91ad41;
+}
+
+.news-body-blog {
+    width: 100%;
+    padding: 25px;
+    background-color: #f5f6fb;
+    text-align: center;
+}
+
+.news-body-heading {
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.news-body-description {
+    font-size: 13px;
+    color: #707070;
+    margin: 0;
+    padding-top: 10px;
+
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+}
+
+/* Pagination */
+.news-pagination {
+    list-style: none;
+    margin: 0 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.news-pagination-link {
+    text-decoration: none;
+    display: block;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #495b72;
+
+    margin: 0 2px;
+    font-size: 1.4rem;
+    line-height: 3.2rem;
+    font-weight: 400;
+    color: #495b72;
+    cursor: pointer;
+}
+
+.news-pagination--active {
+    border: 1px solid #91ad41;
+    background-color: #91ad41;
+    color: #fff;
+}
+
+
+.news-pagination--round {
+    width: 62px;
+    border-radius: 15px
+}
+
+
+.news-pagination-item:hover .news-pagination-link {
+    border: 1px solid #91ad41;
+    background-color: #91ad41;
+    color: #fff;
+}
+
+.news-pagination-item:hover .news-pagination--active {
+    color: #495b72;
+}
+
+
+

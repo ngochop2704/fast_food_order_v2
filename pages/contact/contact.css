@@ -1,0 +1,108 @@
+
+.contact-header {
+    background-image: url(https://mcdn.nhanh.vn/store2/71503/bn/banner_trang_sp.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 62px 0;
+    margin-bottom: 40px;
+    background-size: cover;
+}
+
+.contact-heading {
+    margin: 0;
+    font-size: 2.8rem;
+    font-weight: 400;
+    line-height: 3.4rem;
+    color: var(--text-color);
+}
+
+.contact-header-list {
+    margin: 0;
+    padding: 15px 0 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.contact-header-item i {
+    font-size: 1.4rem;
+    color: #707070;
+    margin-right: 10px;
+}
+
+.contact-header-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #707070;
+    font-weight: 300;
+}
+
+.contact-header-label {
+    color: var(--primary-color);
+}
+
+
+/* ////////////// */
+.contact_with {
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    font-weight: 300;
+    margin: 0 0 8px;
+}
+
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 48px;
+}
+
+.contact_form > label {
+    display: block;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.contact_form > label > span {
+    float: left;
+    color: #54595a;
+    width: 30%;
+    font-size: 1.6rem;
+}
+
+.contact_form > label > input {
+    width: 70%;
+    height: 33px;
+    border: 1px solid #ccc;
+    padding: 0 5px;
+    font-size: 1.4rem;
+
+}
+
+.contact_form > label > textarea {
+    width: 70%;
+    height: 150px;
+    border: 1px solid #ccc;
+    resize: none;
+    padding: 0 5px;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #54595a;
+}
+
+.contact_form > label > button {
+    height: 32px;
+    min-width: 84px;
+    border: none;
+    background-color: #54595a;
+    color: #fff;
+    padding: 0 5px;
+    font-size: 1.4rem;
+    float: right;
+    cursor: pointer;
+}

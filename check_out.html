@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thanh toán</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/fonts/fontawesome-free-6.1.1-web/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- Header logo on Tablet & Mobile -->
+      <div class="checkout__logo-tablet hide-on-pc">
+        <a href="./index.html" class="checkout__logo-link-tablet">
+          <img
+            src="https://mcdn.nhanh.vn/store2/71503/logo_1648529413_Green Quality Tea Instagram Post.png"
+            alt=""
+            class="checkout__logo-img-tablet"
+          />
+        </a>
+      </div>
+      <!-- ///////////// main__checkout & sidebar__checkout -->
+      <div class="wrapper__checkout">
+        <div class="main__checkout">
+          <!-- Header logo on PC -->
+          <div class="checkout__logo hide-on-mobile-tablet">
+            <a href="./index.html" class="checkout__logo-link">
+              <img
+                src="https://mcdn.nhanh.vn/store2/71503/logo_1648529413_Green Quality Tea Instagram Post.png"
+                alt=""
+                class="checkout__logo-img"
+              />
+            </a>
+          </div>
+          <div class="content__checkout">
+            <div class="left__checkout">
+              <div class="heading__left">
+                <p>
+                  <i class="fa-solid fa-id-card"></i>
+                  Thông tin khách hàng
+                </p>
+                <a class="register__checkout" href="./pages/user/sign_in.html">
+                  <i class="fa-solid fa-circle-user"></i>
+                  Đăng nhập
+                </a>
+              </div>
+              <div>
+                <!-- Form information client -->
+                <form action="" method="POST" class="form" id="form-1">
+                  <div class="form-group">
+                    <input id="fullname" name="fullname" type="text" placeholder="Họ tên" class="form-control">
+                    <span class="form-message"></span>
+                  </div>
+  
+                  <div class="form-group">
+                    <input id="email" name="email" type="text" placeholder="Email" class="form-control">
+                    <span class="form-message"></span>
+                  </div>
+              
+                  <div class="form-group">
+                    <input id="phone" name="phone" type="tel" placeholder="Điện thoại" class="form-control">
+                    <span class="form-message"></span>
+                  </div>
+              
+                  <div class="form-group">
+                    <input id="address" name="address" type="text" placeholder="Địa chỉ" class="form-control">
+                    <span class="form-message"></span>
+                  </div>
+        
+                  <div class="form-group">
+                    <select id="province" name="province" class="form-control">
+                      <option value="">-- Chọn Tỉnh/ Thành phố --</option>
+                      <option value="hni">Hà Nội</option>
+                      <option value="hpg">Hải Phòng</option>
+                      <option value="dn">Đà Nẵng</option>
+                      <option value="ntr">Nha Trang</option>
+                      <option value="hcm">Hồ Chí Minh</option>
+                    </select>
+                    <span class="form-message"></span>
+                  </div>
+  
+                  <div class="form-group">
+                    <select id="district" name="district" class="form-control">
+                      <option value="">-- Chọn Quận/ Huyện --</option>
+                      <option value="hni">Hà Nội</option>
+                      <option value="hpg">Hải Phòng</option>
+                      <option value="dn">Đà Nẵng</option>
+                      <option value="ntr">Nha Trang</option>
+                      <option value="hcm">Hồ Chí Minh</option>
+                    </select>
+                    <span class="form-message"></span>
+                  </div>
+  
+                  <div class="form-group">
+                    <textarea id="note" class="note-frame" name="description" cols="30" rows="5" placeholder="Ghi chú"></textarea>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="right__checkout">
+              <div class="heading__right">
+                <p>
+                  <i class="fa-solid fa-credit-card"></i>
+                  Thanh toán
+                </p>
+              </div>
+              <div class="payment__way">
+                <input id="choose__way" class="choose__way" type="radio">
+                <label for="choose__way">Thanh toán khi nhận hàng (COD)</label>
+              </div>
+              <button class="btn btn-primary order__checkout-btn">Đặt hàng</button>
+              <a href="./shopping_cart.html" class="back__cart">
+                <i class="fa-solid fa-angle-left"></i>
+                Quay về giỏ hàng
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- ////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <div class="sidebar__checkout">
+          <div class="sidebar__header">
+            <p>Đơn hàng (5 sản phẩm)</p>
+            <a href="#" class="sidebar__view-detail hide-on-pc">
+              Xem chi tiết
+              <i class="fa-solid fa-angle-right"></i>
+            </a>
+          </div>
+          <div class="sidebar__content">
+            <div class="sidebar__infor-product">
+              <ul class="sidebar__list-product">
+                <!-- render product need payment -->
+              </ul>
+            </div>
+            <div class="transition-js">
+              <div class="sidebar__discount">
+                <div class="sidebar__form-discount">
+                  <input type="text" class="sidebar__input-discount" placeholder="Nhập mã giảm giá">
+                  <button class="btn sidebar__form-btn">Áp dụng</button>
+                </div>
+                <p class="sidebar__label-discount">Mã khuyến mãi không hợp lệ</p>
+              </div>
+              <div class="sidebar__summary">
+                <ul class="sidebar__summary-list">
+                  <li class="sidebar__summary-item">
+                    <span>Tạm tính</span>
+                    <span class="temporary_price">280,000₫</span>
+                  </li>
+                  <li class="sidebar__summary-item">
+                    <span>Chiết khấu</span>
+                    <span>0₫</span>
+                  </li>
+                  <li class="sidebar__summary-item">
+                    <span>Giảm giá</span>
+                    <span>0₫</span>
+                  </li>
+                  <li class="sidebar__summary-item">
+                    <span>Phí vận chuyển</span>
+                    <span>0₫</span>
+                  </li>
+                  <li class="sidebar__summary-item">
+                    <span>Tổng cộng</span>
+                    <span  class="total_price">280,000₫</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="sidebar__footer">
+                <a href="./shopping_cart.html" class="sidebar__back-cart">
+                  <i class="fa-solid fa-angle-left"></i>
+                  Quay về giỏ hàng
+                </a>
+                <button class="btn sidebar__order-btn">Đặt hàng</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ////////////////////////////////////////////////////////////////////////////////////////////////// -->
+      </div>
+    </div>
+
+    <!-- Modal Layout -->
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__body">
+          <!--Modal when click on cart icon-->
+          <div class="dialog__cart">
+              <button class="btn dialog__close">x</button>
+              <div class="dialog__content">
+                <!-- Render infor in dialog box-->
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <script src="./assets/javascript/main.js"></script>
+    <script>
+      var sideBarListProduct = document.querySelector('.sidebar__list-product');
+      var temporaryPrice = document.querySelector('.temporary_price');
+      var totalPrice = document.querySelector('.total_price');
+      var totalQuantityCheckOut = document.querySelector('.sidebar__header p');
+
+      renderProductCheckOut();
+
+      //********** Render product on sidebar (check_out.html page) **********\\
+      function renderProductCheckOut() {
+          totalBill = 0;
+          totalQuantity = 0;
+          var cart = JSON.parse(localStorage.getItem('cart'));
+          
+          if(cart.length !== 0) {
+              var htmls = cart.map(item => {
+                  totalBill += (Number.isInteger(item.price) ? item.price : 0) * item.quantity;
+                  totalQuantity += item.quantity;
+                  
+                  return `
+                      <li class="sidebar__item-product">
+                          <div class="sidebar__item-display">
+                          <img src="${item.image}" alt="${item.name}" class="sidebar__item-img">
+                          <span class="sidebar__item-quantity">${item.quantity}</span>
+                          </div>
+                          <div class="sidebar__item-discript">
+                          <p class="sidebar__item-name">${item.name} - 200 gram</p>
+                          <p class="sidebar__item-stock">Còn hàng</p>
+                          </div>
+                          <p class="sidebar__item-price">${Number.isInteger(item.price) ? (item.price*item.quantity).toLocaleString()+'₫' : item.price}</p>
+                      </li>           
+                  `;
+              });
+              sideBarListProduct.innerHTML = htmls.join('');
+              temporaryPrice.innerHTML = totalBill.toLocaleString()+'₫';
+              totalPrice.innerHTML = totalBill.toLocaleString()+'₫';
+              totalQuantityCheckOut.innerHTML = `Đơn hàng (${totalQuantity} sản phẩm)`;
+          }
+      }
+    </script>
+    <script>
+      var viewListProduct = document.querySelector('.sidebar__view-detail');
+      viewListProduct.onclick = (e) => {
+        e.preventDefault();
+        
+        if(sideBarListProduct.style.display === '') {
+          sideBarListProduct.style.display = 'block';
+        }
+        else {
+          sideBarListProduct.style.display = '';
+        }
+      }
+    </script>
+    <!-- Validator -->
+     <script src="./pages/user/validator.js"></script>
+     <script>
+         Validator({
+             form: '#form-1',
+             formGroupSelector: '.form-group',
+             errorSelector: '.form-message',
+             rules: [
+                 Validator.isRequired('#fullname', "Vui lòng nhập họ tên đầy đủ."),
+                 Validator.isRequired('#email'),
+                 Validator.isEmail('#email'),
+                 Validator.isRequired('#address'),
+                 Validator.isRequired('#phone'),
+                 Validator.isPhoneNumber('#phone'),
+                 Validator.isRequired('#province', 'Vui lòng chọn Tỉnh/ TP.'),
+                 Validator.isRequired('#district', 'Vui lòng chọn Quận/ Huyện.'),
+             ],
+             onSubmit(data) {
+                 console.log(data);
+             }
+         });
+     </script>
+  </body>
+</html>
+
+

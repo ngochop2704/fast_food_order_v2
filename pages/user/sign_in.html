@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../../assets/css/base.css">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./auth_form.css">
+    <link rel="stylesheet" href="../../assets/css/grid.css">
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/fonts/fontawesome-free-6.1.1-web/css/all.min.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="grid wide">
+            <div class="row">
+                <!-- Main Header on mobile & tablet -->
+                <div class="col l-0 m-3 c-3">
+                    <!-- BarMenu on mobile & tablet -->
+                    <div class="bar__menu-symbol">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="bar__menu-modal"></div>
+                    <div class="bar__menu">
+                        <ul class="bar__menu-list">
+                            <li class="bar__menu-item">
+                                <h2 class="bar__menu-heading">Menu</h2>
+                            </li>
+                            <li class="bar__menu-item bar__menu-logo">
+                                <img src="https://mcdn.nhanh.vn/store2/71503/logo_1648529413_Green Quality Tea Instagram Post.png" alt="" class="bar__menu-logo-img">
+                            </li>
+                            <li class="bar__menu-item"><a href="../../index.html" class="bar__menu-item-link">Trang chủ</a></li>
+                            <li class="bar__menu-item">
+                                <a href="../../all_product.html" class="bar__menu-item-link">
+                                    Sản phẩm
+                                    <span class="bar__menu-product"><i class="bar__menu-product-icon-right fa-solid fa-angle-right"></i></span>
+                                </a>
+                            </li>
+                            <li class="bar__menu-item"><a href="../news/new_feed.html" class="bar__menu-item-link">Tin tức</a></li>
+                            <li class="bar__menu-item"><a href="../contact/contact.html" class="bar__menu-item-link">Liên hệ</a></li>
+                            <li class="bar__menu-item"><a href="#" class="bar__menu-item-link">Sale up 50%</a></li>
+                        </ul>
+                        <!-- bar__menu-product-list -->
+                        <ul class="bar__menu-product-list">
+                            <li class="bar__menu-product-item">
+                                <!-- <a href="#" class="bar__menu-product-item-link">Hoa quả tươi</a> -->
+                                <h2 class="bar__menu-product-heading">
+                                    <span class="bar__menu-product-left"><i class="bar__menu-product-icon-left fa-solid fa-angle-left"></i></span>
+                                    Sản phẩm
+                                </h2>
+                            </li>
+
+                            <li class="bar__menu-product-item">
+                                <a href="../../vegetables_product.html" class="bar__menu-product-item-link">Rau củ</a>
+                            </li>
+                            <li class="bar__menu-product-item">
+                                <a href="../../fruits_product.html" class="bar__menu-product-item-link">Hoa quả tươi</a>
+                            </li>
+                            <li class="bar__menu-product-item">
+                                <a href="../../freshfoods_product.html" class="bar__menu-product-item-link">Thực phẩm tươi sống</a>
+                            </li>
+                            <li class="bar__menu-product-item">
+                                <a href="../../cereals_product.html" class="bar__menu-product-item-link">Ngũ cốc</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Main Header on PC -->
+                <div class="col l-12 m-9 c-9">
+                    <div class="grid">
+                        <div class="row no-gutters">
+                            <div class="col l-2 m-6 c-6">
+                                <div class="header__logo">
+                                    <a href="../../index.html" class="header__logo-link">
+                                        <img src="https://mcdn.nhanh.vn/store2/71503/logo_1648529413_Green Quality Tea Instagram Post.png" alt="" class="header__logo-img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col l-10 m-6 c-6">
+                                <nav class="header__nav">
+                                    <ul class="header__nav-list-item hide-on-mobile-tablet">
+                                        <li class="header__nav-item">
+                                            <a href="../../index.html" class="header__nav-item-link">Trang chủ</a>
+                                        </li>
+                                        <li class="header__nav-item">
+                                            <a href="../../all_product.html" class="header__nav-item-link">
+                                                <span>Sản phẩm</span>
+                                                <i class="header__nav-icon-down fa-solid fa-caret-down"></i>
+                                            </a>
+                                            <ul class="header__options-product">
+                                                <li class="header__product-item">
+                                                    <a href="../../vegetables_product.html" class="header__product-link">Rau củ</a>
+                                                </li>
+                                                <li class="header__product-item">
+                                                    <a href="../../fruits_product.html" class="header__product-link">Hoa quả tươi</a>
+                                                </li>
+                                                <li class="header__product-item">
+                                                    <a href="../../freshfoods_product.html" class="header__product-link">Thực phẩm tươi sống</a>
+                                                </li>
+                                                <li class="header__product-item">
+                                                    <a href="../../cereals_product.html" class="header__product-link">Ngũ cốc</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="header__nav-item">
+                                            <a href="../news/new_feed.html" class="header__nav-item-link">Tin tức</a>
+                                        </li>
+                                        <li class="header__nav-item">
+                                            <a href="../contact/contact.html" class="header__nav-item-link">Liên hệ</a>
+                                        </li>
+                                        <li class="header__nav-item">
+                                            <a href="" class="header__nav-item-link">Sale up to 50%</a>
+                                        </li>
+                                    </ul>
+                                    
+                                    <ul class="header__nav-list-icon">
+                                        <li class="header__nav-icon">
+                                            <a href="" class="header__nav-icon-link"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                            <div class="header__search">
+                                                <input type="text" placeholder="Tìm kiếm..." class="header__search-input">
+                                                <i class="header__search-icon-mini fa-solid fa-magnifying-glass"></i>
+                                                <ul class="header__search-history">
+                                                    <li class="header__search-history-item">Web</li>
+                                                    <li class="header__search-history-item">Ranking</li>
+                                                    <li class="header__search-history-item">Web ranking</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="header__nav-icon">
+                                            <a href="" class="header__nav-icon-link user-nav-icon-js"><i class="fa-solid fa-user-plus"></i></a>
+                                            <div class="header__user">
+                                                <a href="#" class="btn btn--primary login-btn-js">Đăng nhập</a>
+                                                <a href="./sign_up.html" class="btn register-btn-js">Đăng ký</a>
+                                            </div>
+                                        </li>
+                                        <li class="header__nav-icon">
+                                            <a href="./shopping_cart.html" class="header__nav-icon-link header__bag-js"><i class="fa-solid fa-bag-shopping"></i></a>
+                                            <span class="header__bag-label"></span>
+                                            <!-- ********** Notify detail bag ********** -->
+                                            <div class="bag-content">
+                                                <!-- no product in cart -->
+                                                <p class="header__bag-description">Giỏ hàng không có sản phẩm !</p>
+                                                <!-- has product in cart -->
+                                                <div class="bag-content-wrapper">
+                                                    <div class="bag-content-heading">
+                                                        <p>Giỏ hàng <b>3</b> sản phẩm !</p>
+                                                    </div>
+                                                    <div class="bag-content-body">
+                                                        <ul class="bag-content-list">
+                                                            <!-- Render product in bag -->
+                                                        </ul>
+                                                    </div>
+                                                    <div class="bag-content-footer">
+                                                        <p class="bag-content-review">
+                                                            <span>Tổng cộng: </span>
+                                                            <span class="bag-content-total">220000₫</span>
+                                                        </p>
+                                                        <a href="../../check_out.html" class="btn btn--primary bag-content-btn">Tiến hành thanh toán</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Login and Register transfer -->
+    <div class="auth__form">
+        <!-- ******************* Login Form ******************* -->
+        <div class="login-form">
+            <div class="auth__form-header">
+                <h2 class="auth__form-heading">Đăng nhập tài khoản</h2>
+                <ul class="auth__form-header-list">
+                    <li class="auth__form-header-item">
+                        <a href="../../index.html" class="auth__form-header-link">Trang chủ</a>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </li>
+                    <li class="auth__form-header-item">
+                        <a href="" class="auth__form-header-link auth__form-header-label">Đăng nhập tài khoản</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="grid__padding grid wide">
+                <div class="auth__form-body">
+                    <h2 class="auth__form-body-heading">Đăng nhập tài khoản</h2>
+                    <div class="auth__form-body-social">
+                        <a href="" class="auth__form-facebook btn">
+                            <i class="auth__form-socials-icon fa-brands fa-facebook-f"></i>
+                            <span class="label-icon">Facebook</span>
+                        </a>
+                        <a href="" class="auth__form-google btn">
+                            <i class="auth__form-socials-icon fa-brands fa-google-plus-g"></i>
+                            <span class="label-icon">Google</span>
+                        </a>
+                    </div>
+
+                    <form action="" method="POST" class="form" id="form-1">
+                        <ul class="auth__form-body-list">
+                            <li class="auth__form-body-item form-group">
+                                <input id="fullname" name="fullname" type="text" placeholder="Họ và tên" class="form-control auth__form-body-input">
+                                <span class="form-message"></span>
+                            </li>
+                            <li class="auth__form-body-item form-group">
+                                <input id="email" name="email" type="text" placeholder="Địa chỉ Email" class="form-control auth__form-body-input">
+                                <span class="form-message"></span>
+                            </li>
+                            <li class="auth__form-body-item">
+                                <button class="btn  btn--primary auth__form-body-btn">Đăng nhập</button>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <div class="auth__form-footer">
+                    <h3 class="auth__form-footer-forget">Quên mật khẩu?</h3>
+                    <p class="auth__form-footer-remind">
+                        Bạn chưa có tài khoản. Vui lòng đăng nhập <a href="./sign_up.html">tại đây</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Register discount -->
+        <div class="register__discount">
+            <div class="grid wide">
+                <div class="register__discount-wrap">
+                    <h2 class="register__heading">Đăng kí nhận tin khuyến mãi</h2>
+                    <div class="register__group">
+                        <input type="text" class="register__input" placeholder="Nhập Email của bạn">
+                        <button class="btn btn--primary register__btn">Đăng ký</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Footer -->
+        <div class="grid wide__footer grid__padding">
+            <div class="row">
+                <div class="col l-4 m-4 c-12">
+                    <div class="footer__contact">
+                        <img src="https://mcdn.nhanh.vn/store2/71503/logo_1648529413_Green Quality Tea Instagram Post.png" alt="" class="footer__contact-logo">
+                        <ul class="footer__contact-list">
+                            <li class="footer__contact-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>30 Phạm Văn Đồng Cầu Giấy, Hà Nội</span>
+                            </li>
+                            <li class="footer__contact-item">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                <span>1900.2812</span>
+                            </li>
+                            <li class="footer__contact-item">
+                                <i class="fa-solid fa-square-envelope"></i>
+                                <span>ngochop2704@gmail.com</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col l-8 m-8 c-12">
+                    <div class="grid">
+                        <div class="footer__sub">
+                            <div class="row no-gutters">
+                                <div class="col l-4 m-4 c-12">
+                                    <h2 class="footer__sub-heading">
+                                        CẨM NANG SỬ DỤNG
+                                        <i class="footer__plus-icon fa-solid fa-plus hide-on-pc-tablet"></i>
+                                    </h2>
+
+                                    <ul class="footer__sub-list hide-on-mobile">
+                                        <li class="footer__sub-item"><a href="#">Trang chủ</a></li>
+                                        <li class="footer__sub-item"><a href="#">Giới thiệu</a></li>
+                                        <li class="footer__sub-item"><a href="#">Sản phẩm</a></li>
+                                        <li class="footer__sub-item"><a href="#">Tin tức</a></li>
+                                        <li class="footer__sub-item"><a href="#">Liên hệ</a></li>
+                                    </ul>    
+                                </div>
+                                <div class="col l-4 m-4 c-12">
+                                    <h2 class="footer__sub-heading">
+                                        CHÍNH SÁCH
+                                        <i class="footer__plus-icon fa-solid fa-plus hide-on-pc-tablet"></i>
+                                    </h2>
+
+                                    <ul class="footer__sub-list hide-on-mobile">
+                                        <li class="footer__sub-item"><a href="#">Trang chủ</a></li>
+                                        <li class="footer__sub-item"><a href="#">Giới thiệu</a></li>
+                                        <li class="footer__sub-item"><a href="#">Sản phẩm</a></li>
+                                        <li class="footer__sub-item"><a href="#">Tin tức</a></li>
+                                        <li class="footer__sub-item"><a href="#">Liên hệ</a></li>
+                                    </ul>    
+                                </div>
+                                <div class="col l-4 m-4 c-12">
+                                    <h2 class="footer__sub-heading">
+                                        DỊCH VỤ
+                                        <i class="footer__plus-icon fa-solid fa-plus hide-on-pc-tablet"></i>
+                                    </h2>
+
+                                    <ul class="footer__sub-list hide-on-mobile">
+                                        <li class="footer__sub-item"><a href="#">Trang chủ</a></li>
+                                        <li class="footer__sub-item"><a href="#">Giới thiệu</a></li>
+                                        <li class="footer__sub-item"><a href="#">Sản phẩm</a></li>
+                                        <li class="footer__sub-item"><a href="#">Tin tức</a></li>
+                                        <li class="footer__sub-item"><a href="#">Liên hệ</a></li>
+                                    </ul> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="footer__sub"></div> -->
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer__bottom">
+            <span>Thiết kế web bởi</span>
+            <img src="http://t0307.store.nhanh.vn/images/favicon.ico" alt="">
+            <b> NHanh.vn </b>
+        </div>
+    </footer>
+
+    <script src="../../assets/javascript/main.js"></script>
+    <script src="./validator.js"></script>
+    <script>
+        Validator({
+            form: '#form-1',
+            formGroupSelector: '.form-group',
+            errorSelector: '.form-message',
+            rules: [
+                Validator.isRequired('#fullname', "Vui lòng nhập họ tên đầy đủ."),
+                Validator.isRequired('#email'),
+                Validator.isEmail('#email'),
+                Validator.minLength('#password', 3)
+            ],
+            onSubmit(data) {
+                console.log(data);
+            }
+        });
+    </script>
+</body>
+</html>

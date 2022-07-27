@@ -1,0 +1,146 @@
+
+.news-header {
+    background-image: url(https://mcdn.nhanh.vn/store2/71503/bn/banner_trang_sp.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 62px 0;
+    margin-bottom: 40px;
+    background-size: cover;
+}
+
+.news-heading {
+    margin: 0;
+    font-size: 3.6rem;
+    font-weight: 400;
+    line-height: 3.6rem;
+    color: var(--text-color);
+}
+
+.news-header-list {
+    margin: 0;
+    padding: 15px 16px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.news-header-item {
+    text-align: center;
+}
+
+.news-header-item i {
+    font-size: 1.4rem;
+    color: #707070;
+    margin-right: 10px;
+}
+
+.news-header-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #707070;
+    font-weight: 300;
+}
+
+.news-header-label {
+    color: var(--primary-color);
+}
+
+/* /////////////////////////////////////////// */
+
+.blog__title {
+    font-size: 3.2rem;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #212529;
+    margin: 0 0 20px;
+}
+
+.blog__descript {
+    font-size: 1.6rem;
+    margin: 0 0 12px;
+    color: #212529;
+}
+
+.blog__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.blog__item > p {
+    margin: 0 0 16px;
+}
+
+.blog__item-title {
+    font-size: 3.2rem;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #212529;
+    margin: 0 0 8px;
+}
+
+.blog__item-detail {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #212529;
+}
+
+.blog__item-img {
+    max-width: 100%;
+    height: 400px;
+}
+
+.blog__social_media {
+    border-bottom: 1px solid #EAEBF3;
+    margin: 20px -15px;
+}
+
+.blogs__best-view {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #EAEBF3;
+}
+
+.blogs__best-heading {
+    margin: 30px 0 10px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #212529;
+}
+
+.blogs__best-list {
+    margin: 0 0 16px;
+    padding: 0 0 0 16px;
+    list-style-type: disc;
+}
+
+.blogs__best-item {
+    color: #707070;
+    padding: 5px 0;
+    display: list-item;
+}
+
+.blogs__best-link {
+    text-decoration:  none;
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #707070;
+    display: block;
+    line-height: 1.5;
+}
+
+.blogs__best-item:hover, 
+.blogs__best-link:hover {
+    color: #91ad41;
+}
+
+.blog__comment {
+    margin-bottom: 40px;
+}
+
+.blog__comment iframe {
+    width: 550px;
+}

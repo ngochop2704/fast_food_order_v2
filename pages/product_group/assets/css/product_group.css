@@ -1,0 +1,665 @@
+.news-header {
+    background-image: url(https://mcdn.nhanh.vn/store2/71503/bn/banner_trang_sp.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 62px 0;
+    margin-bottom: 40px;
+    background-size: cover;
+}
+.news-heading {
+    margin: 0;
+    font-size: 2.8rem;
+    font-weight: 400;
+    line-height: 3.4rem;
+    color: var(--text-color);
+}
+
+.news-header-list {
+    margin: 0;
+    padding: 15px 0 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.news-header-item i {
+    font-size: 1.4rem;
+    color: #707070;
+    margin-right: 10px;
+}
+
+.news-header-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #707070;
+    font-weight: 300;
+}
+
+.news-header-label {
+    color: var(--primary-color);
+}
+
+
+/* ////////////// */
+.margin_bottom_30px {
+    margin-bottom: 30px;
+}
+
+.filter__tool-product {
+
+}
+
+.filter__tool-top {
+    border: 1px solid #91ad41;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.filter__tool-tilte {
+    font-size: 2.4rem;
+    margin: 13px 0;
+    line-height: 1.2;
+    font-weight: 300;
+}
+
+.filter__tool-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 1.4rem;
+}
+
+.filter__tool-item {
+    padding-left: 20px;
+}
+
+.filter__tool-link {
+    text-decoration: none;
+    color: #212529;
+}
+
+.filter__tool-link:hover i {
+    background-color: #91ad41;
+    border-color: #91ad41;
+}
+
+.filter__tool--active {
+    background-color: #91ad41;
+    border-color: #91ad41;
+}
+
+.filter__tool-link i {
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    border: 1px solid #cdcfdd;
+    margin-right: 5px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.filter__tool-on-mobile {
+    display: flex;
+    align-items: center;
+
+    font-size: 1.4rem;
+    color: #212529;
+    margin: 10px 0;
+    padding: 2px 0;
+
+}
+
+.filter__tool-on-mobile span {
+    width: 30%;
+}
+
+.filter__tool-select {
+    width: 70%;
+}
+
+/************************* Product detail *************************/
+.product__detail-name {
+    font-size: 2.8rem;
+    line-height: 1.2;
+    font-weight: 300;
+    margin: 0 0 8px;
+}
+
+.product__detail-overview {
+    display: flex;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    padding: 5px 0 10px;
+    color: #212529;
+}
+
+.product__detail-overview span {
+    color: #91ad41;
+}
+
+.product__detail-brand {
+    margin: 0 4px 0 0;
+}
+
+.product__detail-status {
+    margin: 0 0 0 4px;
+}
+
+.product__detail-rating {
+    padding: 2px;
+}
+
+.product__detail-rating i {
+    font-size: 1.3rem;
+    color: #d5d5d5;
+}
+
+.product__detail-gold {
+    color: #fdba12 !important; 
+}
+
+.product__detail-price {
+    display: inline-block;
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: #91ad41;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.product__detail-price--current {
+    font-size: 2.4rem;
+    color: #91ad41;
+    margin-right: 5px;
+}
+
+.product__detail-price--old {
+    font-size: 1.4rem;
+    color: #8d90a6;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+.product__detail-option p {
+    margin: 0 0 8px;
+    font-size: 14px;
+    color: #212529;
+    line-height: 1.5;
+}
+
+.product__detail-btn-classify {
+    border: 1px solid #333;
+    color: #212529;
+    font-size: 1.3rem;
+    min-width: 45px;
+    padding: 6px 12px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    border-radius: 6px;
+}
+
+.product__detail-btn-classify:hover {
+    border-color: #f36;
+    background-image: url(http://t0307.store.nhanh.vn/tp/T0304/img/bg_chonsen.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+
+.product__detail-btn-classify--chosen {
+    outline: none;
+    border-color: rgb(0 123 255 / 25%);
+    box-shadow: 0 0 0 3.2px rgb(0 123 255 / 25%);
+}
+
+.product__detail-brief {
+    font-size: 1.4rem;
+    margin: 0;
+    line-height: 1.5;
+    color: #212529;
+    padding: 10px 0 20px;
+    border-bottom: 1px dashed #ebebeb;
+}
+
+.product__detail-quantity {
+    padding: 15px 0 30px;
+}
+
+.product__detail-quantity span {
+    font-size: 1.4rem;
+    padding: 1px 0;
+    margin-right: 4px;
+    font-weight: 400;
+}
+
+.product__detail-quantity .btn {
+    min-width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #e1e1e1;
+    font-size: 1.4rem;
+    padding: 0 9px;
+    background-color: #f0f0f0;
+}
+
+.product__detail-number {
+    width: 100px;
+    border-radius: 20px;
+    text-align: center;
+    outline: none;
+    border: 1px solid #ccc;
+    line-height: 3rem;
+    font-size: 1.4rem;
+}
+
+.product__detail-btn-add {
+    min-width: 250px;
+    height: 45px;
+    font-size: 1.5rem;
+    border-radius: 25px;
+}
+
+.product__detail-call {
+    margin: 25px 0 0;
+    color: #8d90a6;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+.product__detail-call a {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #91ad41;
+    text-decoration: none;
+}
+
+ /************************* zoom image *************************/
+.img-zoom-container {
+    position: relative;
+}
+
+#myimage {
+    width: 100%;
+    height: 500px;
+}
+
+.img-zoom-lens {
+    position: absolute;
+    z-index: 5;
+    border: 1px solid #d4d4d4;
+    /*set the size of the lens:*/
+    width: 250px;
+    height: 250px;
+    display: none;
+    border: 5px solid #888;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 40%);
+    cursor: crosshair;
+}
+
+/* .picZoomCursor-ico{
+	width: 23px;
+	height: 23px;
+	position: absolute;
+	top: 110px;
+	left: 110px;
+	background: url(../imgs/zoom-ico.png) left top no-repeat;
+} */
+
+.img-zoom-result {
+    position: absolute;
+    top: 40px;
+    left: 596px;
+    border: 1px solid #d4d4d4;
+    /*set the size of the result div:*/
+    width: 450px;
+    height: 450px;
+    display: none;
+    border: 1px solid #888;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 40%);
+}
+
+.piclist {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 15px auto 0;
+    padding: 0;
+    list-style: none;
+}
+
+.piclist li {
+    margin-right: 20px;
+    border: 1px solid #e1e1e1;
+}
+
+li.pic-item--active {
+    border-color: #91ad41;
+}
+
+.piclist li img {
+    width: 96px;
+}
+
+.product__detail-banner {
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* /////////////////////////////////// */
+.product__detail-tab {
+    width: 100%;
+    padding: 0;
+    margin: 40px 0 0 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.product__detail-tab-link {
+    text-decoration: none;
+    font-size: 2.3rem;
+    color: #212529;
+    display: block;
+    padding: 29px 0;
+    margin: 0 40px;
+    position: relative;
+}
+
+.product__detail-tab-link:hover {
+    color: #91ad41;
+}
+
+.product__detail-tab-item--active .product__detail-tab-link::after {
+    display: block;
+    content: '';
+    width: 55px;
+    border-bottom: 2px solid #91ad41;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.product__detail-tab-item span{
+    display: none;
+}
+
+.product__detail-tab-content {
+    padding: 45px 0 60px;
+}
+
+.product__detail-tab-descript {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.tab-content-pane {
+    display: none;
+}
+
+.product__detail-tab-descript > p {
+    padding: 0;
+    margin: 0 0 16px;
+}
+
+.product__detail-standard {
+    padding: 0 0 0 80px;
+    margin: 0 0 16px 0;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.product__detail-feature {
+    padding: 0 0 0 80px;
+    margin: 0 0 16px 0;
+    border-bottom: 1px solid #ebebeb;
+}
+ 
+.tab-content-pane--active {
+    display: block;
+}
+
+.product__detail-tab-comment {
+    /* text-align: center; */
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #212529;
+    margin: 0;
+}
+
+ /************************* Pagination *************************/
+.products-pagination {
+    list-style: none;
+    margin: 0 0 40px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.products-pagination-link {
+    text-decoration: none;
+    display: block;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #495b72;
+
+    margin: 0 2px;
+    font-size: 1.4rem;
+    line-height: 3.2rem;
+    font-weight: 400;
+    color: #495b72;
+    cursor: pointer;
+}
+
+.products-pagination--active {
+    border: 1px solid #91ad41;
+    background-color: #91ad41;
+    color: #fff;
+}
+
+
+.products-pagination--round {
+    width: 62px;
+    border-radius: 15px
+}
+
+
+.products-pagination-item:hover .products-pagination-link {
+    border: 1px solid #91ad41;
+    background-color: #91ad41;
+    color: #fff;
+}
+
+.products-pagination-item:hover .products-pagination--active {
+    color: #495b72;
+}
+
+/************************* Shopping cart product *************************/
+.wrapper-shopping-cart {
+
+}
+
+.shopping-cart-title {
+    margin: 0 0 8px;
+    font-size: 2.8rem;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #212529;
+}
+
+.shopping-cart-notify{
+    margin: 0 0 40px;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #212529;
+}
+
+.shopping-cart-body {
+    margin-top: 50px;
+}
+
+.item-cart__product {
+    display: flex;
+    padding: 30px;
+    border: 1px solid #ebebeb;
+    border-radius: 20px;
+    margin-bottom: 5px;
+}
+
+.item-cart__product-img {
+    width: 10%;
+}
+
+.item-cart__product-link {
+    text-decoration: none;
+}
+
+.item-cart__product-link img {
+    width: 100%;
+}
+
+.item-cart__product-info {
+    width: 50%;
+    padding-left: 40px;
+}
+
+.item-cart__product-name {
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 12px;
+    color: #707070;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+.item-cart__product-price {
+    font-size: 1.6rem;
+    color: #91ad41;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.item-cart__product-amount {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-cart__product-amount .btn {
+    min-width: 30px;
+    height: 30px;
+    border: 1px solid #e1e1e1;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    padding: 0 9px;
+}
+
+.item-cart__product-btn-decrease {
+    
+}
+
+.item-cart__product-quantity {
+    width: 60px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid silver;
+    margin: 0 4px;
+    font-size: 1.4rem;
+    color: #212529;
+}
+
+.item-cart__product-btn-increase {
+    
+}
+
+.item-cart__product-total {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    color: #707070;
+}
+
+.item-cart__product-total span:nth-child(1) {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.item-cart__product-total span:nth-child(2) {
+    font-size: 1.6rem;
+    color: #91ad41;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.item-cart__product-total p {
+    margin: 0 0 16px;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.item-cart__product-delete i {
+    margin-right: 5px;
+}
+
+.shopping-cart-bill {
+    text-align: right;
+    padding: 25px 0;
+    margin: 0;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #212529;
+}
+
+.shopping-cart-bill span {
+    font-size: 2.2rem;
+    margin-left: 15px;
+    color: #91ad41;
+}
+
+.shopping-cart-action {
+    text-align: right;
+    margin-bottom: 40px;
+}
+
+.shopping-cart-action .btn {
+    min-width: 168px;
+    height: 49px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    border: 1px solid #ebebeb;
+    border-radius: 30px;
+}
+
+.shopping-cart-action a:nth-child(1) {
+    background-color: #ebebeb;
+}
+
+.shopping-cart-action a:nth-child(1):hover {
+    color: #91ad41
+}
+
+.shopping-cart-action a:nth-child(2) {
+    color: #fff;
+}
+
+.shopping-cart-action a:nth-child(2):hover {
+    background: #91ad41;
+}

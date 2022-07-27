@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast_Order_Food</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.1-web/css/all.min.css">
+
+</head>
+<body>
+    <div class="app-container">
+        <header class="header">
+            <div class="grid wide">
+                <div class="row">
+                    <!-- BarMenu on mobile & tablet -->
+                    <div class="col l-0 m-3 c-3">
+                        <div class="bar__menu-symbol">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <div class="bar__menu-modal"></div>
+                        <div class="bar__menu">
+                            <ul class="bar__menu-list">
+                                <li class="bar__menu-item">
+                                    <h2 class="bar__menu-heading">Menu</h2>
+                                </li>
+                                <li class="bar__menu-item bar__menu-logo">
+                                    <img src="https://mcdn.nhanh.vn/store2/71503/logo_1648529413_Green Quality Tea Instagram Post.png" alt="" class="bar__menu-logo-img">
+                                </li>
+                                <li class="bar__menu-item"><a href="#" class="bar__menu-item-link">Trang chủ</a></li>
+                                <li class="bar__menu-item">
+                                    <a href="./all_product.html" class="bar__menu-item-link">
+                                        Sản phẩm
+                                        <span class="bar__menu-product"><i class="bar__menu-product-icon-right fa-solid fa-angle-right"></i></span>
+                                    </a>
+                                </li>
+                                <li class="bar__menu-item"><a href="./pages/news/new_feed.html" class="bar__menu-item-link">Tin tức</a></li>
+                                <li class="bar__menu-item"><a href="./pages/contact/contact.html" class="bar__menu-item-link">Liên hệ</a></li>
+                                <li class="bar__menu-item"><a href="#" class="bar__menu-item-link">Sale up 50%</a></li>
+                            </ul>
+                            <!-- bar__menu-product-list -->
+                            <ul class="bar__menu-product-list">
+                                <li class="bar__menu-product-item">
+                                    <h2 class="bar__menu-product-heading">
+                                        <span class="bar__menu-product-left"><i class="bar__menu-product-icon-left fa-solid fa-angle-left"></i></span>
+                                        Sản phẩm
+                                    </h2>
+                                </li>
+    
+                                <li class="bar__menu-product-item">
+                                    <a href="./vegetables_product.html" class="bar__menu-product-item-link">Rau củ</a>
+                                </li>
+                                <li class="bar__menu-product-item">
+                                    <a href="./fruits_product.html" class="bar__menu-product-item-link">Hoa quả tươi</a>
+                                </li>
+                                <li class="bar__menu-product-item">
+                                    <a href="./freshfoods_product.html" class="bar__menu-product-item-link">Thực phẩm tươi sống</a>
+                                </li>
+                                <li class="bar__menu-product-item">
+                                    <a href="./cereals_product.html" class="bar__menu-product-item-link">Ngũ cốc</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- BarMenu on PC -->
+                    <div class="col l-12 m-9 c-9">
+                        <div class="grid">
+                            <div class="row no-gutters">
+                                <div class="col l-2 m-6 c-6">
+                                    <div class="header__logo">
+                                        <a href="#" class="header__logo-link">
+                                            <img src="https://mcdn.nhanh.vn/store2/71503/logo_1648529413_Green Quality Tea Instagram Post.png" alt="" class="header__logo-img">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col l-10 m-6 c-6">
+                                    <nav class="header__nav">
+                                        <ul class="header__nav-list-item hide-on-mobile-tablet">
+                                            <li class="header__nav-item">
+                                                <a href="#" class="header__nav-item-link">Trang chủ</a>
+                                            </li>
+                                            <li class="header__nav-item">
+                                                <a href="./all_product.html" class="header__nav-item-link">
+                                                    <span>Sản phẩm</span>
+                                                    <i class="header__nav-icon-down fa-solid fa-caret-down"></i>
+                                                </a>
+                                                <ul class="header__options-product">
+                                                    <li class="header__product-item">
+                                                        <a href="./vegetables_product.html" class="header__product-link">Rau củ</a>
+                                                    </li>
+                                                    <li class="header__product-item">
+                                                        <a href="./fruits_product.html" class="header__product-link">Hoa quả tươi</a>
+                                                    </li>
+                                                    <li class="header__product-item">
+                                                        <a href="./freshfoods_product.html" class="header__product-link">Thực phẩm tươi sống</a>
+                                                    </li>
+                                                    <li class="header__product-item">
+                                                        <a href="./cereals_product.html" class="header__product-link">Ngũ cốc</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="header__nav-item">
+                                                <a href="./pages/news/new_feed.html" class="header__nav-item-link">Tin tức</a>
+                                            </li>
+                                            <li class="header__nav-item">
+                                                <a href="./pages/contact/contact.html" class="header__nav-item-link">Liên hệ</a>
+                                            </li>
+                                            <li class="header__nav-item">
+                                                <a href="" class="header__nav-item-link">Sale up to 50%</a>
+                                            </li>
+                                        </ul>
+                                        
+                                        <ul class="header__nav-list-icon">
+                                            <li class="header__nav-icon">
+                                                <a href="" class="header__nav-icon-link"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                <div class="header__search">
+                                                    <input type="text" placeholder="Tìm kiếm..." class="header__search-input">
+                                                    <i class="header__search-icon-mini fa-solid fa-magnifying-glass"></i>
+                                                    <ul class="header__search-history">
+                                                        <li class="header__search-history-item">Web</li>
+                                                        <li class="header__search-history-item">Ranking</li>
+                                                        <li class="header__search-history-item">Web ranking</li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="header__nav-icon">
+                                                <a href="" class="header__nav-icon-link user-nav-icon-js"><i class="fa-solid fa-user-plus"></i></a>
+                                                <div class="header__user">
+                                                    <a href="./pages/user/sign_in.html" class="btn btn--primary login-btn-js">Đăng nhập</a>
+                                                    <a href="./pages/user/sign_up.html" class="btn register-btn-js">Đăng ký</a>
+                                                </div>
+                                            </li>
+                                            <li class="header__nav-icon">
+                                                <a href="./shopping_cart.html" class="header__nav-icon-link header__bag-js"><i class="fa-solid fa-bag-shopping"></i></a>
+                                                <span class="header__bag-label"></span>
+                                                <!-- ********** Notify detail bag ********** -->
+                                                <div class="bag-content">
+                                                    <!-- no product in cart -->
+                                                    <p class="header__bag-description">Giỏ hàng không có sản phẩm !</p>
+                                                    <!-- has product in cart -->
+                                                    <div class="bag-content-wrapper">
+                                                        <div class="bag-content-heading">
+                                                            <p>Giỏ hàng <b>3</b> sản phẩm !</p>
+                                                        </div>
+                                                        <div class="bag-content-body">
+                                                            <ul class="bag-content-list">
+                                                                <!-- Render product in bag -->
+                                                            </ul>
+                                                        </div>
+                                                        <div class="bag-content-footer">
+                                                            <p class="bag-content-review">
+                                                                <span>Tổng cộng: </span>
+                                                                <span class="bag-content-total">220000₫</span>
+                                                            </p>
+                                                            <a href="./check_out.html" class="btn btn--primary bag-content-btn">Tiến hành thanh toán</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <!-- ///////////////////////////////////////////////////////// -->
+        <!-- Main app container -->
+        <div class="container">
+            <!-- Banner Advertisement -->
+            <div class="banner">
+                <div class="slider-wrapper">
+                    <div class="slider-main">
+                        <div class="slider-item" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/bn/t0307_banner1.png);"></div>
+                        <div class="slider-item" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/bn/t0307_banner2.png);"></div>
+                    </div>
+                </div>
+    
+                <div class="grid">
+                    <div class="row no-gutters">
+                        <div class="col l-3 m-6 c-12">
+                            <div class="banner__sub-I banner__sub">
+                                <div class="banner__sub-item" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/bn/col_1__1_.png);"></div>
+                                <div class="banner__sub-content">
+                                    <h3 class="banner__sub-heading">Rau củ xanh</h3>
+                                    <p class="banner__sub-description">
+                                        Chúng tôi cam kết 100% các sản phẩm có nguồn gốc xuất xứ rõ ràng, sạch, an toàn và đảm bảo chất lượng ngon nhất giao đến tận tay người tiêu dùng, để san sẻ sự vất vả của các mẹ, các chị
+                                    </p>
+                                    <button class="btn banner__sub-view">Xem ngay</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col l-3 m-6 c-12">
+                            <div class="banner__sub-II banner__sub">
+                                <div class="banner__sub-item" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/bn/col_2.png);"></div>
+                                <div class="banner__sub-content">
+                                    <h3 class="banner__sub-heading">Dinh dưỡng mỗi ngày</h3>
+                                    <p class="banner__sub-description">
+                                        Chúng tôi cam kết 100% các sản phẩm có nguồn gốc xuất xứ rõ ràng, sạch, an toàn và đảm bảo chất lượng ngon nhất giao đến tận tay người tiêu dùng, để san sẻ sự vất vả của các mẹ, các chị
+                                    </p>
+                                    <button class="btn banner__sub-view">Xem ngay</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col l-3 m-6 c-12">
+                            <div class="banner__sub-III banner__sub">
+                                <div class="banner__sub-item" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/bn/col_3.png);"></div>
+                                <div class="banner__sub-content">
+                                    <h3 class="banner__sub-heading">Thực phẩm tươi</h3>
+                                    <p class="banner__sub-description">
+                                        Chúng tôi cam kết 100% các sản phẩm có nguồn gốc xuất xứ rõ ràng, sạch, an toàn và đảm bảo chất lượng ngon nhất giao đến tận tay người tiêu dùng, để san sẻ sự vất vả của các mẹ, các chị
+                                    </p>
+                                    <button class="btn banner__sub-view">Xem ngay</button>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col l-3 m-6 c-12">
+                            <div class="banner__sub-IV banner__sub">
+                                <div class="banner__sub-item" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/bn/col_4.png);"></div>
+                                <div class="banner__sub-content">
+                                    <h3 class="banner__sub-heading">Hoa quả sạch</h3>
+                                    <p class="banner__sub-description">
+                                        Chúng tôi cam kết 100% các sản phẩm có nguồn gốc xuất xứ rõ ràng, sạch, an toàn và đảm bảo chất lượng ngon nhất giao đến tận tay người tiêu dùng, để san sẻ sự vất vả của các mẹ, các chị
+                                    </p>
+                                    <button class="btn banner__sub-view">Xem ngay</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- About us and List product -->
+            <div class="grid wide">
+                <!-- about Us -->
+                <div class="about__us grid__padding">
+                    <header class="about__us-header">
+                        <h2 class="about__us-heading">VỀ CHÚNG TÔI</h2>
+                        <p class="about__us-info">Hiện tại vùng nguyên liệu của chúng tôi có thể cung cấp các thực tập tươi sạch với số lượng lớn vì đang vào vụ mùa thu hoạch nên chúng tôi có thể cung ứng cho tất cả các đối tác xuất khẩu nông sản trên cả nước</p>
+                    </header>
+                    
+                    <div class="grid wide">
+                        <div class="row about__us-slick-slider">
+                            <div class="col l-3 m-6 c-6">
+                                <div class="about__us-item">
+                                    <div class="about__us-item-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/bn/icon_uti_1.png);"></div>
+                                    <div class="about__us-item-content">
+                                        <div class="about__us-item-label">Trang trại hữu cơ</div>
+                                        <div class="about__us-item-description">Cung cấp 100% thực phẩm sạch đảm bảo an toàn và ngon nhất</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-6 c-6">
+                                <div class="about__us-item">
+                                    <div class="about__us-item-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/bn/icon_uti_2.png);"></div>
+                                    <div class="about__us-item-content">
+                                        <div class="about__us-item-label">Thực phẩm sạch</div>
+                                        <div class="about__us-item-description">Cung cấp 100% thực phẩm sạch đảm bảo an toàn và ngon nhất</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-6 c-6">
+                                <div class="about__us-item">
+                                    <div class="about__us-item-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/bn/icon_uti_3.png);"></div>
+                                    <div class="about__us-item-content">
+                                        <div class="about__us-item-label">An toàn sinh học</div>
+                                        <div class="about__us-item-description">Cung cấp 100% thực phẩm sạch đảm bảo an toàn và ngon nhất</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-6 c-6">
+                                <div class="about__us-item">
+                                    <div class="about__us-item-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/bn/icon_uti_4.png);"></div>
+                                    <div class="about__us-item-content">
+                                        <div class="about__us-item-label">Đa dạng sinh học</div>
+                                        <div class="about__us-item-description">Cung cấp 100% thực phẩm sạch đảm bảo an toàn và ngon nhất</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- List Product -->
+                <div class="list__product">
+                    <header class="list__product-header">
+                        <h2 class="list__product-heading">DANH MỤC SẢN PHẨM</h2>
+                        <p class="list__product-on-mobile hide-on-pc-tablet">
+                            Rau củ
+                            <i class="list__product-on-mobile-icon fa-solid fa-angle-down"></i>
+                        </p>
+    
+                        <ul class="header__options-product list__product-classify-on-mobile hide-on-pc-tablet">
+                            <li class="header__product-item">
+                                <a href="#vegetables_product" class="header__product-link classify-btn--active sample__product-classify-link-js">Rau củ</a>
+                            </li>
+                            <li class="header__product-item">
+                                <a href="#fruits_product" class="header__product-link sample__product-classify-link-js">Hoa quả tươi</a>
+                            </li>
+                            <li class="header__product-item">
+                                <a href="#freshfoods_product" class="header__product-link sample__product-classify-link-js">Thực phẩm tươi sống</a>
+                            </li>
+                            <li class="header__product-item">
+                                <a href="#cereals_product" class="header__product-link sample__product-classify-link-js">Ngũ cốc</a>
+                            </li>
+                        </ul>
+    
+                        <div class="list__product-classify hide-on-mobile">
+                            <a href="#vegetables_product" class="btn classify-btn classify-btn--active sample__product-classify-link-js">Rau củ</a>
+                            <a href="#fruits_product" class="btn classify-btn sample__product-classify-link-js">Hoa quả tươi</a>
+                            <a href="#freshfoods_product" class="btn classify-btn sample__product-classify-link-js">Thực phẩm tươi sống</a>
+                            <a href="#cereals_product" class="btn classify-btn sample__product-classify-link-js">Ngũ cốc</a>
+                        </div>
+                    </header>
+                    
+                    <div class="grid wide grid__padding">
+                        <div class="row list-product-sample">
+                            <!-- Render product filtered into here -->
+                        </div>
+                    </div>
+                </div>     
+            </div>
+    
+            <!-- Hotline Banner -->
+            <div class="hotline__banner" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/bn/green_farm.jpg);">
+                <div class="hotline__wrap">
+                    <h2 class="hotline-heading">Hotline</h2>
+                    <a href="tel:1900.2812" class="hotline-link">1900.2812</a>
+                    <p class="hotline-desc">Chúng tôi cam kết 100% các sản phẩm có nguồn gốc xuất xứ rõ ràng, sạch, an toàn và đảm bảo chất lượng ngon nhất.</p>
+                </div>
+            </div>
+    
+            <!-- List Product Top Seller-->
+            <div class="grid wide grid__padding">    
+                <div class="list__product">
+                    <header class="list__product-header">
+                        <h2 class="list__product-heading">SẢN PHẨM BÁN CHẠY</h2>
+                    </header>
+                    
+                    <div class="grid wide">
+                        <div class="row product-top-seller__slick-slider list-product-top-seller">
+                            <!-- Render product seller into here -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Hot New-->
+                <div class="list__product">
+                    <header class="list__product-header">
+                        <h2 class="list__product-heading">TIN TỨC NỔI BẬT</h2>
+                    </header>
+                    
+                    <div class="grid wide">
+                        <div class="row hot__new-slick-slider">
+                            <div class="col l-4 m-6 c-12">
+                                <a href="./pages/news/news_blogs/blog_1.html" class="list__product-item margin_bottom_30px">
+                                    <div class="list__product-item-img hot__new-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/art/41968416-280694729439890-8459559393178510661-n.jpg);">
+                                        <div class="date__post">
+                                            <i class="fa-solid fa-calendar"></i>
+                                            <b>25-03-2022</b>
+                                                Đăng bởi
+                                            <b>Admin</b>
+                                        </div>
+                                    </div>
+                                    <div class="list__product-item-content">
+                                        <div class="list__product-item-name hot__new-heading">Phân biệt các loại dầu ăn hiện nay để đảm bảo sức khỏe cả nhà</div>
+                                        <div class="list__product-item-price hot__new-body">Hiện nay trên thị trường có rất nhiều loại dầu ăn. Vậy bạn có biết cách phân biệt và chọn cho gia đình mình loại dầu tốt cho sức khỏe chưa? Hãy cùng Bách hóa XANH tìm hiểu cách hân biệt các loại dầu ăn ngay sau đây nhé!</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-4 m-6 c-12">
+                                <a href="#" class="list__product-item margin_bottom_30px">
+                                    <div class="list__product-item-img hot__new-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/artCT/99041/15_2.jpg);">
+                                        <div class="date__post">
+                                            <i class="fa-solid fa-calendar"></i>
+                                            <b>24-03-2022</b>
+                                                Đăng bởi
+                                            <b>Admin</b>
+                                        </div>
+                                    </div>
+                                    <div class="list__product-item-content">
+                                        <div class="list__product-item-name hot__new-heading">9 lợi ích sức khỏe của nấm bờm sư tử và tác dụng phụ</div>
+                                        <div class="list__product-item-price hot__new-body">Nấm bờm sư tử (còn gọi là nấm hầu thủ hoặc yamabushitake) là loại nấm lớn, có màu trắng và xù xì giống bờm sư tử. Có thể ăn sống, nấu chín, sấy khô hoặc ngâm nấm hầu thủ như một loại trà. Chiết xuất của chúng được sử dụng cho các loại thực phẩm chức năng. Nó có vị giống hải sản (cua hoặc tôm hùm) và chứa nhiều hoạt chất sinh học có tác dụng tốt đối với cơ thể, đặc biệt là não, tim và ruột.</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-4 m-6 c-12">
+                                <a href="#" class="list__product-item margin_bottom_30px">
+                                    <div class="list__product-item-img hot__new-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/art/istock-688005624-1000-plus-copy.jpg);">
+                                        <div class="date__post">
+                                            <i class="fa-solid fa-calendar"></i>
+                                            <b>24-03-2022</b>
+                                                Đăng bởi
+                                            <b>Admin</b>
+                                        </div>
+                                    </div>
+                                    <div class="list__product-item-content">
+                                        <div class="list__product-item-name hot__new-heading">Calo và chất dinh dưỡng để cung cấp năng lượng cho hoạt động thể thao</div>
+                                        <div class="list__product-item-price hot__new-body">Việc nạp calo và các chất dinh dưỡng đóng vai trò vô cùng quan trọng đối với các hoạt động thể thao và sức khoẻ tổng thể của bạn. Điều này cũng giúp bạn tăng cường hiệu suất tập luyện, đồng thời nâng cao sức đề kháng của mình trước bệnh tật.</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-4 m-6 c-12">
+                                <a href="./pages/news/news_blogs/blog_2.html" class="list__product-item margin_bottom_30px">
+                                    <div class="list__product-item-img hot__new-img" style="background-image: url(https://img.cdn.vncdn.io/nvn/ncdn/store2/71503/art/6.jpg);">
+                                        <div class="date__post">
+                                            <i class="fa-solid fa-calendar"></i>
+                                            <b>25-03-2022</b>
+                                                Đăng bởi
+                                            <b>Admin</b>
+                                        </div>
+                                    </div>
+                                    <div class="list__product-item-content">
+                                        <div class="list__product-item-name hot__new-heading">Organic là gì? Vì sao nên sử dụng thực phẩm hữu cơ?</div>
+                                        <div class="list__product-item-price hot__new-body">Hiện nay, những cửa hàng bán thực phẩm organic mọc lên như nấm. Vậy thực phẩm organic là gì? Và tại sao mọi người có xu hướng sử dụng thực phẩm này?</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-4 m-6 c-12">
+                                <a href="./pages/news/news_blogs/blog_1.html" class="list__product-item margin_bottom_30px">
+                                    <div class="list__product-item-img hot__new-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/artCT/99126/17_2.jpg);">
+                                        <div class="date__post">
+                                            <i class="fa-solid fa-calendar"></i>
+                                            <b>24-03-2022</b>
+                                                Đăng bởi
+                                            <b>Admin</b>
+                                        </div>
+                                    </div>
+                                    <div class="list__product-item-content">
+                                        <div class="list__product-item-name hot__new-heading">Không phải sữa, những thực phẩm này còn giàu Canxi hơn!</div>
+                                        <div class="list__product-item-price hot__new-body">Nếu bạn đã ngao ngán đến việc uống sữa mỗi ngày, thì những thực phẩm như cá hồi, hạt hạnh nhân, các loại đậu,… sẽ giúp bạn bổ sung Canxi đầy đủ.</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-4 m-6 c-12">
+                                <a href="#" class="list__product-item margin_bottom_30px">
+                                    <div class="list__product-item-img hot__new-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/artCT/99008/z3282169757156_c4a11940dac1803d5086bfe978ee5ec2.jpg);">
+                                        <div class="date__post">
+                                            <i class="fa-solid fa-calendar"></i>
+                                            <b>24-03-2022</b>
+                                                Đăng bởi
+                                            <b>Admin</b>
+                                        </div>
+                                    </div>
+                                    <div class="list__product-item-content">
+                                        <div class="list__product-item-name hot__new-heading">Những lợi ích từ khoai lang bạn cần biết!</div>
+                                        <div class="list__product-item-price hot__new-body">Khoai lang là loại thức ăn dân dã đã có từ lâu đời tại các nước châu Á. Tuy giá thành của loại thực phẩm này không đắt nhưng nó lại mang đến những giá trị dinh dưỡng tuyệt vời. Hãy cùng Farmers Market tìm hiểu xem vì sao khoai lang lại “thần kỳ” đến thế nhé!</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-4 m-6 c-12">
+                                <a href="#" class="list__product-item margin_bottom_30px">
+                                    <div class="list__product-item-img hot__new-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/art/41968416-280694729439890-8459559393178510661-n.jpg);">
+                                        <div class="date__post">
+                                            <i class="fa-solid fa-calendar"></i>
+                                            <b>25-03-2022</b>
+                                                Đăng bởi
+                                            <b>Admin</b>
+                                        </div>
+                                    </div>
+                                    <div class="list__product-item-content">
+                                        <div class="list__product-item-name hot__new-heading">Phân biệt các loại dầu ăn hiện nay để đảm bảo sức khỏe cả nhà</div>
+                                        <div class="list__product-item-price hot__new-body">Hiện nay trên thị trường có rất nhiều loại dầu ăn. Vậy bạn có biết cách phân biệt và chọn cho gia đình mình loại dầu tốt cho sức khỏe chưa? Hãy cùng Bách hóa XANH tìm hiểu cách hân biệt các loại dầu ăn ngay sau đây nhé!</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-4 m-6 c-12">
+                                <a href="#" class="list__product-item margin_bottom_30px">
+                                    <div class="list__product-item-img hot__new-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/artCT/99041/15_2.jpg);">
+                                        <div class="date__post">
+                                            <i class="fa-solid fa-calendar"></i>
+                                            <b>24-03-2022</b>
+                                                Đăng bởi
+                                            <b>Admin</b>
+                                        </div>
+                                    </div>
+                                    <div class="list__product-item-content">
+                                        <div class="list__product-item-name hot__new-heading">9 lợi ích sức khỏe của nấm bờm sư tử và tác dụng phụ</div>
+                                        <div class="list__product-item-price hot__new-body">Nấm bờm sư tử (còn gọi là nấm hầu thủ hoặc yamabushitake) là loại nấm lớn, có màu trắng và xù xì giống bờm sư tử. Có thể ăn sống, nấu chín, sấy khô hoặc ngâm nấm hầu thủ như một loại trà. Chiết xuất của chúng được sử dụng cho các loại thực phẩm chức năng. Nó có vị giống hải sản (cua hoặc tôm hùm) và chứa nhiều hoạt chất sinh học có tác dụng tốt đối với cơ thể, đặc biệt là não, tim và ruột.</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-4 m-6 c-12">
+                                <a href="#" class="list__product-item margin_bottom_30px">
+                                    <div class="list__product-item-img hot__new-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/art/istock-688005624-1000-plus-copy.jpg);">
+                                        <div class="date__post">
+                                            <i class="fa-solid fa-calendar"></i>
+                                            <b>24-03-2022</b>
+                                                Đăng bởi
+                                            <b>Admin</b>
+                                        </div>
+                                    </div>
+                                    <div class="list__product-item-content">
+                                        <div class="list__product-item-name hot__new-heading">Calo và chất dinh dưỡng để cung cấp năng lượng cho hoạt động thể thao</div>
+                                        <div class="list__product-item-price hot__new-body">Việc nạp calo và các chất dinh dưỡng đóng vai trò vô cùng quan trọng đối với các hoạt động thể thao và sức khoẻ tổng thể của bạn. Điều này cũng giúp bạn tăng cường hiệu suất tập luyện, đồng thời nâng cao sức đề kháng của mình trước bệnh tật.</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-4 m-6 c-12">
+                                <a href="./pages/news/news_blogs/blog_2.html" class="list__product-item margin_bottom_30px">
+                                    <div class="list__product-item-img hot__new-img" style="background-image: url(https://img.cdn.vncdn.io/nvn/ncdn/store2/71503/art/6.jpg);">
+                                        <div class="date__post">
+                                            <i class="fa-solid fa-calendar"></i>
+                                            <b>25-03-2022</b>
+                                                Đăng bởi
+                                            <b>Admin</b>
+                                        </div>
+                                    </div>
+                                    <div class="list__product-item-content">
+                                        <div class="list__product-item-name hot__new-heading">Organic là gì? Vì sao nên sử dụng thực phẩm hữu cơ?</div>
+                                        <div class="list__product-item-price hot__new-body">Hiện nay, những cửa hàng bán thực phẩm organic mọc lên như nấm. Vậy thực phẩm organic là gì? Và tại sao mọi người có xu hướng sử dụng thực phẩm này?</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-4 m-6 c-12">
+                                <div class="list__product-item margin_bottom_30px">
+                                    <a href="./pages/news/news_blogs/blog_1.html" class="list__product-item-img hot__new-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/artCT/99126/17_2.jpg);">
+                                        <div class="date__post">
+                                            <i class="fa-solid fa-calendar"></i>
+                                            <b>24-03-2022</b>
+                                                Đăng bởi
+                                            <b>Admin</b>
+                                        </div>
+                                    </a>
+                                    <div class="list__product-item-content">
+                                        <div class="list__product-item-name hot__new-heading">Không phải sữa, những thực phẩm này còn giàu Canxi hơn!</div>
+                                        <div class="list__product-item-price hot__new-body">Nếu bạn đã ngao ngán đến việc uống sữa mỗi ngày, thì những thực phẩm như cá hồi, hạt hạnh nhân, các loại đậu,… sẽ giúp bạn bổ sung Canxi đầy đủ.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 c-12">
+                                <a href="#" class="list__product-item margin_bottom_30px">
+                                    <div class="list__product-item-img hot__new-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/artCT/99008/z3282169757156_c4a11940dac1803d5086bfe978ee5ec2.jpg);">
+                                        <div class="date__post">
+                                            <i class="fa-solid fa-calendar"></i>
+                                            <b>24-03-2022</b>
+                                                Đăng bởi
+                                            <b>Admin</b>
+                                        </div>
+                                    </div>
+                                    <div class="list__product-item-content">
+                                        <div class="list__product-item-name hot__new-heading">Những lợi ích từ khoai lang bạn cần biết!</div>
+                                        <div class="list__product-item-price hot__new-body">Khoai lang là loại thức ăn dân dã đã có từ lâu đời tại các nước châu Á. Tuy giá thành của loại thực phẩm này không đắt nhưng nó lại mang đến những giá trị dinh dưỡng tuyệt vời. Hãy cùng Farmers Market tìm hiểu xem vì sao khoai lang lại “thần kỳ” đến thế nhé!</div>
+                                    </div>
+                                </a>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+                <!--Top Brand-->
+                <div class="list__product">
+                    <header class="list__product-header top__brand-header">
+                        <h2 class="list__product-heading">TOP THƯƠNG HIỆU</h2>
+                    </header>
+                    
+                    <div class="grid wide">
+                        <div class="row brand__slick-slider" style="flex-wrap: nowrap;">
+                            <div class="col l-2 m-4 c-4">
+                                <div class="list__product-item top__brand-item">
+                                    <div class="list__product-item-img top__brand-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/brand/image_1648056912_512.png);"></div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 c-4">
+                                <div class="list__product-item top__brand-item">
+                                    <div class="list__product-item-img top__brand-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/brand/image_1648056901_437.png);"></div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 c-4">
+                                <div class="list__product-item top__brand-item">
+                                    <div class="list__product-item-img top__brand-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/brand/image_1648056827_217.png);"></div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 c-4">
+                                <div class="list__product-item top__brand-item">
+                                    <div class="list__product-item-img top__brand-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/brand/image_1648056817_528.png);"></div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 c-4">
+                                <div class="list__product-item top__brand-item">
+                                    <div class="list__product-item-img top__brand-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/brand/image_1648056802_53.png);"></div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 c-4">
+                                <div class="list__product-item top__brand-item">
+                                    <div class="list__product-item-img top__brand-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/brand/image_1648056912_512.png);"></div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 c-4">
+                                <div class="list__product-item top__brand-item">
+                                    <div class="list__product-item-img top__brand-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/brand/image_1648056901_437.png);"></div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 c-4">
+                                <div class="list__product-item top__brand-item">
+                                    <div class="list__product-item-img top__brand-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/brand/image_1648056827_217.png);"></div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 c-4">
+                                <div class="list__product-item top__brand-item">
+                                    <div class="list__product-item-img top__brand-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/brand/image_1648056817_528.png);"></div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 c-4">
+                                <div class="list__product-item top__brand-item">
+                                    <div class="list__product-item-img top__brand-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/brand/image_1648056802_53.png);"></div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 c-4">
+                                <div class="list__product-item top__brand-item">
+                                    <div class="list__product-item-img top__brand-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/brand/image_1648056912_512.png);"></div>
+                                </div>
+                            </div><div class="col l-2 m-4 c-4">
+                                <div class="list__product-item top__brand-item">
+                                    <div class="list__product-item-img top__brand-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/brand/image_1648056901_437.png);"></div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 c-4">
+                                <div class="list__product-item top__brand-item">
+                                    <div class="list__product-item-img top__brand-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/brand/image_1648056827_217.png);"></div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 c-4">
+                                <div class="list__product-item top__brand-item">
+                                    <div class="list__product-item-img top__brand-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/brand/image_1648056817_528.png);"></div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 c-4">
+                                <div class="list__product-item top__brand-item">
+                                    <div class="list__product-item-img top__brand-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/brand/image_1648056802_53.png);"></div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 c-4">
+                                <div class="list__product-item top__brand-item">
+                                    <div class="list__product-item-img top__brand-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/brand/image_1648056912_512.png);"></div>
+                                </div>
+                            </div><div class="col l-2 m-4 c-4">
+                                <div class="list__product-item top__brand-item">
+                                    <div class="list__product-item-img top__brand-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/brand/image_1648056901_437.png);"></div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 c-4">
+                                <div class="list__product-item top__brand-item">
+                                    <div class="list__product-item-img top__brand-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/brand/image_1648056827_217.png);"></div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 c-4">
+                                <div class="list__product-item top__brand-item">
+                                    <div class="list__product-item-img top__brand-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/brand/image_1648056817_528.png);"></div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 c-4">
+                                <div class="list__product-item top__brand-item">
+                                    <div class="list__product-item-img top__brand-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/brand/image_1648056802_53.png);"></div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 c-4">
+                                <div class="list__product-item top__brand-item">
+                                    <div class="list__product-item-img top__brand-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/brand/image_1648056912_512.png);"></div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 c-4">
+                                <div class="list__product-item top__brand-item">
+                                    <div class="list__product-item-img top__brand-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/brand/image_1648056901_437.png);"></div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 c-4">
+                                <div class="list__product-item top__brand-item">
+                                    <div class="list__product-item-img top__brand-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/brand/image_1648056827_217.png);"></div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 c-4">
+                                <div class="list__product-item top__brand-item">
+                                    <div class="list__product-item-img top__brand-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/brand/image_1648056817_528.png);"></div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 c-4">
+                                <div class="list__product-item top__brand-item">
+                                    <div class="list__product-item-img top__brand-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/brand/image_1648056802_53.png);"></div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 c-4">
+                                <div class="list__product-item top__brand-item">
+                                    <div class="list__product-item-img top__brand-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/brand/image_1648056912_512.png);"></div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 c-4">
+                                <div class="list__product-item top__brand-item">
+                                    <div class="list__product-item-img top__brand-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/brand/image_1648056901_437.png);"></div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 c-4">
+                                <div class="list__product-item top__brand-item">
+                                    <div class="list__product-item-img top__brand-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/brand/image_1648056827_217.png);"></div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 c-4">
+                                <div class="list__product-item top__brand-item">
+                                    <div class="list__product-item-img top__brand-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/brand/image_1648056817_528.png);"></div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 c-4">
+                                <div class="list__product-item top__brand-item">
+                                    <div class="list__product-item-img top__brand-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/brand/image_1648056802_53.png);"></div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 c-4">
+                                <div class="list__product-item top__brand-item">
+                                    <div class="list__product-item-img top__brand-img" style="background-image: url(https://mcdn.nhanh.vn/store2/71503/brand/image_1648056912_512.png);"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <footer class="footer">
+            <!-- Register discount -->
+            <div class="register__discount">
+                <div class="grid wide">
+                    <div class="register__discount-wrap">
+                        <h2 class="register__heading">Đăng kí nhận tin khuyến mãi</h2>
+                        <div class="register__group">
+                            <input type="text" class="register__input" placeholder="Nhập Email của bạn">
+                            <button class="btn btn--primary register__btn">Đăng ký</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Main Footer -->
+            <div class="grid wide wide__footer grid__padding">
+                <div class="row">
+                    <div class="col l-4 m-4 c-12">
+                        <div class="footer__contact">
+                            <img src="https://mcdn.nhanh.vn/store2/71503/logo_1648529413_Green Quality Tea Instagram Post.png" alt="" class="footer__contact-logo">
+                            <ul class="footer__contact-list">
+                                <li class="footer__contact-item">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <span>30 Phạm Văn Đồng Cầu Giấy, Hà Nội</span>
+                                </li>
+                                <li class="footer__contact-item">
+                                    <i class="fa-solid fa-mobile-screen-button"></i>
+                                    <span>1900.2812</span>
+                                </li>
+                                <li class="footer__contact-item">
+                                    <i class="fa-solid fa-square-envelope"></i>
+                                    <span>ngochop2704@gmail.com</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col l-8 m-8 c-12">
+                        <div class="grid">
+                            <div class="footer__sub">
+                                <div class="row no-gutters">
+                                    <div class="col l-4 m-4 c-12">
+                                        <h2 class="footer__sub-heading">
+                                            CẨM NANG SỬ DỤNG
+                                            <i class="footer__plus-icon fa-solid fa-plus hide-on-pc-tablet"></i>
+                                        </h2>
+    
+                                        <ul class="footer__sub-list hide-on-mobile">
+                                            <li class="footer__sub-item"><a href="#">Trang chủ</a></li>
+                                            <li class="footer__sub-item"><a href="#">Giới thiệu</a></li>
+                                            <li class="footer__sub-item"><a href="#">Sản phẩm</a></li>
+                                            <li class="footer__sub-item"><a href="#">Tin tức</a></li>
+                                            <li class="footer__sub-item"><a href="#">Liên hệ</a></li>
+                                        </ul>    
+                                    </div>
+                                    <div class="col l-4 m-4 c-12">
+                                        <h2 class="footer__sub-heading">
+                                            CHÍNH SÁCH
+                                            <i class="footer__plus-icon fa-solid fa-plus hide-on-pc-tablet"></i>
+                                        </h2>
+    
+                                        <ul class="footer__sub-list hide-on-mobile">
+                                            <li class="footer__sub-item"><a href="#">Trang chủ</a></li>
+                                            <li class="footer__sub-item"><a href="#">Giới thiệu</a></li>
+                                            <li class="footer__sub-item"><a href="#">Sản phẩm</a></li>
+                                            <li class="footer__sub-item"><a href="#">Tin tức</a></li>
+                                            <li class="footer__sub-item"><a href="#">Liên hệ</a></li>
+                                        </ul>    
+                                    </div>
+                                    <div class="col l-4 m-4 c-12">
+                                        <h2 class="footer__sub-heading">
+                                            DỊCH VỤ
+                                            <i class="footer__plus-icon fa-solid fa-plus hide-on-pc-tablet"></i>
+                                        </h2>
+    
+                                        <ul class="footer__sub-list hide-on-mobile">
+                                            <li class="footer__sub-item"><a href="#">Trang chủ</a></li>
+                                            <li class="footer__sub-item"><a href="#">Giới thiệu</a></li>
+                                            <li class="footer__sub-item"><a href="#">Sản phẩm</a></li>
+                                            <li class="footer__sub-item"><a href="#">Tin tức</a></li>
+                                            <li class="footer__sub-item"><a href="#">Liên hệ</a></li>
+                                        </ul> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- <div class="footer__sub"></div> -->
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <span>Thiết kế web bởi</span>
+                <img src="http://t0307.store.nhanh.vn/images/favicon.ico" alt="">
+                <b> NHanh.vn </b>
+            </div>
+        </footer>
+    </div>
+    <!-- Modal Layout -->
+    <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <!--Modal when click on cart icon-->
+            <div class="dialog__cart">
+                <button class="btn dialog__close">x</button>
+                <div class="dialog__content">
+                    <!-- Render infor in dialog box-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script src="./assets/javascript/main.js"></script>
+    
+    <script>
+        // **************** List product filter on mobile ****************\\
+        var productFilter = document.querySelector('.list__product-on-mobile');
+        if(productFilter) {
+            var listClasifymobile = document.querySelector('.list__product-classify-on-mobile');
+            
+            productFilter.onclick = function(e) {
+                e.stopPropagation();
+                if(listClasifymobile.style.display === '') {
+                    listClasifymobile.style.display = 'block';
+                }
+            }
+
+            window.onclick = () => {
+                listClasifymobile.style.display = '';
+            }
+        }
+
+        // ****************Render List product ****************\\
+        var url = "http://localhost:3000/products";
+        var products = [];
+        var productsSeller = [];
+        var random = 0;
+        var randomPrev;
+        var groupClassifies = document.querySelectorAll('.sample__product-classify-link-js');
+        var classifyBtnActive = document.querySelector('.classify-btn--active');
+        
+        fetch(url)
+            .then(res => res.json())
+            .then(allProducts => {
+                // Render List Product Classifications 
+                if(classifyBtnActive) {
+                    products = allProducts.filter(allProduct => classifyBtnActive.href.includes(allProduct.linkGroup));
+                    document.querySelector('.list-product-sample').innerHTML = renderProduct(products.slice(0, 4)).join('');
+                }
+                groupClassifies.forEach(groupClassify => {
+                    groupClassify.onclick = (e) => {
+                        if(window.innerWidth > 739) {
+                            document.querySelector('div>.classify-btn--active').classList.remove('classify-btn--active');
+                        }
+                        else {
+                            document.querySelector('.classify-btn--active').classList.remove('classify-btn--active');
+                        }
+
+                        e.target.classList.add('classify-btn--active');
+                        productFilter.innerHTML =   `
+                                                        ${e.target.innerText}
+                                                        <i class="list__product-on-mobile-icon fa-solid fa-angle-down"></i>
+                                                    `;
+                        products = allProducts.filter(allProduct => e.target.href.includes(allProduct.linkGroup));
+                        document.querySelector('.list-product-sample').innerHTML = renderProduct(products.slice(0, 4)).join('');
+                    }
+                })
+
+                // Render List Product Top Seller
+                for(var i = 0; i < 8; i++) {
+                    do {
+                        randomPrev = random;
+                        random = Math.floor(Math.random() * allProducts.length);
+                    }
+                    while(randomPrev === random) {
+                        random = Math.floor(Math.random() * allProducts.length);
+                    }
+                    productsSeller.push(allProducts[random]);
+                }
+                document.querySelector('.list-product-top-seller').innerHTML = renderProduct(productsSeller).join('');
+                //############ Slick slider product top seller ############\\
+                if(document.querySelector('.product-top-seller__slick-slider')) {
+                    $(document).ready(function() {
+                        $('.product-top-seller__slick-slider').slick({
+                            slidesToShow: 4,
+                            autoplay: true,
+                            infinite: true,
+                            autoplaySpeed: 1000,
+                            arrows: false,
+                            responsive: [
+                                {
+                                breakpoint: 1024,
+                                settings: {
+                                    slidesToShow: 3,
+                                },
+                                },
+                                {
+                                breakpoint: 739,
+                                settings: {
+                                    slidesToShow: 2,
+                                    slidesToScroll: 1,
+                                },
+                                },
+                            ],
+                        });
+                    });
+                }
+            });
+    </script>
+</body>
+</html>
