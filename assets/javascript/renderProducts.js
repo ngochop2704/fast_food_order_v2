@@ -1,4 +1,4 @@
-        var url = "http://localhost:3000/products";
+        var url = "https://fast-food-order-api.herokuapp.com/products";
 
         var htmls;
         var products = [];
