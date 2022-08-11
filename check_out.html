@@ -288,8 +288,8 @@
                 if(data) {
                   console.log(data);
                   console.log(totalBill)
-                  // var url = "https://fast-food-order-api.herokuapp.com/products";
-                  var url = "http://localhost:3000/orders";
+                  var url = "https://fast-food-order-api.herokuapp.com/orders";
+                  // var url = "http://localhost:3000/orders";
                   var order = {
                     "customerName": data.fullname,
                     "customerEmail": data.email,
@@ -332,8 +332,8 @@
               "unitPrice": product.price
             }
 
-            // var url = "https://fast-food-order-api.herokuapp.com/products";
-            var url = "http://localhost:3000/detailOrders";
+            var url = "https://fast-food-order-api.herokuapp.com/detailOrders";
+            // var url = "http://localhost:3000/detailOrders";
             var option = {
               method: "post",
               headers: {
