@@ -34,6 +34,9 @@
     />
   </head>
   <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v14.0" nonce="PfVAU5nu"></script>
+    
     <div class="app-container">
       <!-- Main Header -->
       <header class="header">
@@ -667,14 +670,14 @@
                       id="product-comment"
                       class="product__detail-tab-comment tab-content-pane"
                     >
-                      <iframe float="left" name="f26cd80a70cbccc" data-testid="fb:comments Facebook Social Plugin" title="fb:comments Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v9.0/plugins/comments.php?app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df2f66914a8676b%26domain%3Dt0307.store.nhanh.vn%26is_canvas%3Dfalse%26origin%3Dhttp%253A%252F%252Ft0307.store.nhanh.vn%252Ff1008fa23d16448%26relation%3Dparent.parent&amp;color_scheme=light&amp;container_width=0&amp;height=100&amp;href=http%3A%2F%2Ft0307.store.nhanh.vn%2Fba-roi-heo-rut-suon-c.p-p37605609.html&amp;locale=en_US&amp;numposts=5&amp;sdk=joey&amp;version=v9.0&amp;" class="" style="border: none; visibility: visible;height: 214px;"></iframe>
+                      <div class="fb-comments" data-href="https://ngochop2704.github.io/fast_food_order_v2/detail_product.html?id=${detailProduct.id}#" data-width="500" data-numposts="5"></div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>             
           `;
-
+          //<iframe float="left" name="f26cd80a70cbccc" data-testid="fb:comments Facebook Social Plugin" title="fb:comments Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v9.0/plugins/comments.php?app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df2f66914a8676b%26domain%3Dt0307.store.nhanh.vn%26is_canvas%3Dfalse%26origin%3Dhttp%253A%252F%252Ft0307.store.nhanh.vn%252Ff1008fa23d16448%26relation%3Dparent.parent&amp;color_scheme=light&amp;container_width=0&amp;height=100&amp;href=http%3A%2F%2Ft0307.store.nhanh.vn%2Fba-roi-heo-rut-suon-c.p-p37605609.html&amp;locale=en_US&amp;numposts=5&amp;sdk=joey&amp;version=v9.0&amp;" class="" style="border: none; visibility: visible;height: 214px;"></iframe>
           // //************************ handle render relative products ************************\\
           var relativeProducts = products.filter(product => product.cat_id === detailProduct.cat_id && product.id !== detailProduct.id);
           document.querySelector('.relative-product-render').innerHTML = renderProduct(relativeProducts).join('');

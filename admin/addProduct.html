@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Thêm sản phẩm
+    </title>
+    <link rel="shortcut icon" href="/images/logo-mb.png" type="image/png">
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- APP CSS -->
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <div class="sidebar-logo">
+            <img src="https://mcdn.nhanh.vn/store2/71503/logo_1648529413_Green%20Quality%20Tea%20Instagram%20Post.png" alt="Comapny logo">
+            <div class="sidebar-close" id="sidebar-close">
+                <i class='bx bx-left-arrow-alt'></i>
+            </div>
+        </div>
+        <div class="sidebar-user">
+            <div class="sidebar-user-info">
+                <img src="./images/user-image-1.png" alt="User picture" class="profile-image">
+                <div class="sidebar-user-name">
+                    Nguyễn Ngọc Hợp
+                </div>
+            </div>
+            <button class="btn btn-outline">
+                <i class='bx bx-log-out bx-flip-horizontal'></i>
+            </button>
+        </div>
+        <!-- SIDEBAR MENU -->
+        <ul class="sidebar-menu">
+            <li class="sidebar-submenu">
+                <a href="./index.html" class="sidebar-menu-dropdown">
+                    <i class='bx bx-home'></i>
+                    <span>Bảng điều khiển</span>
+                </a>
+            </li>
+            <li class="sidebar-submenu">
+                <a href="./listProduct.html" class="sidebar-menu-dropdown">
+                    <i class='bx bx-list-ul'></i>
+                    <span>Danh sách sản phẩm</span>
+                </a>
+            </li>
+            <li class="sidebar-submenu">
+                <a href="#" class="sidebar-menu-dropdown active">
+                    <i class='bx bx-book-add'></i>
+                    <span>Thêm sản phẩm</span>
+                </a>
+            </li>
+            <li class="sidebar-submenu">
+                <a href="./orderProduct.html" class="sidebar-menu-dropdown">
+                    <i class='bx bx-memory-card'></i>
+                    <span>Đơn hàng</span>
+                </a>
+            </li>
+            <li class="sidebar-submenu">
+                <a href="#" class="sidebar-menu-dropdown">
+                    <i class='bx bx-cog'></i>
+                    <span>Cài đặt</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    <li>
+                        <a href="#" class="darkmode-toggle" id="darkmode-toggle">
+                            Ban đêm
+                            <span class="darkmode-switch"></span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <!-- END SIDEBAR MENU -->
+    </div>
+    <!-- END SIDEBAR -->
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+        <div class="main-header">
+            <div class="mobile-toggle" id="mobile-toggle">
+                <i class='bx bx-menu-alt-right'></i>
+            </div>
+            <div class="main-title">
+                Thêm sản phẩm
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="row">
+                <div class="col-10 col-md-10 col-sm-12">
+                    <!-- Form information product -->
+                    <form action="" method="POST" class="form" id="form-1">
+                        <div class="form-group">
+                            <label for="name__product" class="form-label">Tên sản phẩm</label>
+                            <input id="name__product" name="name__product" type="text" placeholder="Tên sản phẩm" class="form-control">
+                            <span class="form-message"></span>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="image__product" class="form-label">Ảnh sản phẩm</label>
+                            <input id="image__product" name="image__product" type="text" placeholder="Ảnh sản phẩm" class="form-control">
+                            <span class="form-message"></span>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="category__product" class="form-label">Phân loại sản phẩm</label>
+                            <select id="category__product" name="category__product" class="form-control" required>
+                                <option value="" disabled selected hidden>Chọn loại</option>
+                                <option value="Rau củ">Rau củ</option>
+                                <option value="Hoa quả tươi">Hoa quả tươi</option>
+                                <option value="Thực phẩm tươi sống">Thực phẩm tươi sống</option>
+                                <option value="Ngũ cốc">Ngũ cốc</option>
+                            </select>
+                            <span class="form-message"></span>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="description__product" class="form-label">Mô tả sản phẩm</label>
+                            <textarea id="description__product" name="description__product" placeholder="Mô tả sản phẩm" class="form-control description__product" ></textarea>
+                            <span class="form-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="new__price" class="form-label">Giá mới</label>
+                            <input id="new__price" name="new__price" type="number" placeholder="vnđ" class="form-control">
+                            <span class="form-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="old__price" class="form-label">Giá cũ</label>
+                            <input id="old__price" name="old__price" type="number" placeholder="vnđ" class="form-control">
+                            <span class="form-message"></span>
+                        </div>
+                        
+                    </form>
+                </div>
+                <div class="col-10">
+                    <button type="submit" class="btn btn--primary add__product-btn">Thêm sản phẩm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END MAIN CONTENT -->
+
+    <div class="overlay"></div>
+
+    <!-- SCRIPT -->
+    <!-- APP JS -->
+    <script src="./js/app.js"></script>
+
+    <script>
+        var addProductBtn = document.querySelector('.add__product-btn');
+
+        addProductBtn.onclick = (e) => {
+            var url = "https://fast-food-order-api.herokuapp.com/products";
+            // var url = "http://localhost:3000/products";
+            var product = {
+                name: document.getElementById('name__product').value.trim(),
+                image: document.getElementById('image__product').value.trim(),
+                currentPrice: document.getElementById('new__price').value.trim()*1,
+                oldPrice: document.getElementById('old__price').value.trim()*1,
+                category: document.getElementById('category__product').value.trim(),
+                details: document.getElementById('description__product').value.trim()
+            }
+            var option = {
+                method: "post",
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(product)
+            }
+
+            fetch(url, option)
+            .then(res => res.json())
+            .then(products => {
+                alert('Sản phẩm đã được thêm!');
+                document.location = 'listProduct.html';
+            })
+            
+        }
+    </script>
+</body>
+
+</html>

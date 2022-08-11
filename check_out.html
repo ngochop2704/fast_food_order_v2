@@ -48,88 +48,93 @@
               />
             </a>
           </div>
-          <div class="content__checkout">
-            <div class="left__checkout">
-              <div class="heading__left">
-                <p>
-                  <i class="fa-solid fa-id-card"></i>
-                  Thông tin khách hàng
-                </p>
-                <a class="register__checkout" href="./pages/user/sign_in.html">
-                  <i class="fa-solid fa-circle-user"></i>
-                  Đăng nhập
+          <div>
+            <!-- Form information client -->
+            <form action="" method="POST" class="form content__checkout" id="form-1">
+              <div class="left__checkout">
+                <div class="heading__left">
+                  <p>
+                    <i class="fa-solid fa-id-card"></i>
+                    Thông tin khách hàng
+                  </p>
+                  <a class="register__checkout" href="./pages/user/sign_in.html">
+                    <i class="fa-solid fa-circle-user"></i>
+                    Đăng nhập
+                  </a>
+                </div>
+                <div>
+                    <div class="form-group">
+                      <input id="fullname" name="fullname" type="text" placeholder="Họ tên" class="form-control">
+                      <span class="form-message"></span>
+                    </div>
+    
+                    <div class="form-group">
+                      <input id="email" name="email" type="text" placeholder="Email" class="form-control">
+                      <span class="form-message"></span>
+                    </div>
+                
+                    <div class="form-group">
+                      <input id="phone" name="phone" type="tel" placeholder="Điện thoại" class="form-control">
+                      <span class="form-message"></span>
+                    </div>
+                
+                    <div class="form-group">
+                      <input id="address" name="address" type="text" placeholder="Địa chỉ" class="form-control">
+                      <span class="form-message"></span>
+                    </div>
+  
+                    <div class="form-group">
+                      <select id="province" name="calc_shipping_provinces" class="form-control" required="">
+                        <option value="">Tỉnh / Thành phố</option>
+                      </select>
+                      <span class="form-message"></span>
+                    </div>
+  
+                    <div class="form-group">
+                      <select id="district" name="calc_shipping_district" class="form-control" required="">
+                        <option value="">Quận / Huyện</option>
+                      </select>
+                      <span class="form-message"></span>
+                      <input class="billing_address_1" name="" type="hidden" value="">
+                      <input class="billing_address_2" name="" type="hidden" value="">
+                    </div>
+    
+                    <div class="form-group">
+                      <textarea id="note" class="note-frame" name="description" cols="30" rows="5" placeholder="Ghi chú"></textarea>
+                    </div>
+                </div>
+              </div>
+              <div class="right__checkout">
+                <div class="heading__right">
+                  <p>
+                    <i class="fa-solid fa-credit-card"></i>
+                    Thanh toán
+                  </p>
+                </div>
+
+                <div class="form-group">
+                  <div class="payment__way">
+                    <input id="choose__way_1" name="choose__way" class="choose__way" type="radio" value="1" class="form-control">
+                    <label for="choose__way_1">Thanh toán khi nhận hàng (COD)</label>
+                  </div>
+                  <div class="payment__way">
+                    <input id="choose__way_2" name="choose__way" class="choose__way" type="radio" value="2" class="form-control">
+                    <label for="choose__way_2">Thanh toán qua Momo</label>
+                  </div>
+                  <div class="payment__way">
+                    <input id="choose__way_3" name="choose__way" class="choose__way" type="radio" value="3" class="form-control">
+                    <label for="choose__way_3">Thanh toán qua Internet Banking</label>
+                  </div>
+                  <span class="form-message"></span>
+                </div>
+
+                <button class="btn btn-primary order__checkout-btn">Đặt hàng</button>
+                <a href="./shopping_cart.html" class="back__cart">
+                  <i class="fa-solid fa-angle-left"></i>
+                  Quay về giỏ hàng
                 </a>
               </div>
-              <div>
-                <!-- Form information client -->
-                <form action="" method="POST" class="form" id="form-1">
-                  <div class="form-group">
-                    <input id="fullname" name="fullname" type="text" placeholder="Họ tên" class="form-control">
-                    <span class="form-message"></span>
-                  </div>
-  
-                  <div class="form-group">
-                    <input id="email" name="email" type="text" placeholder="Email" class="form-control">
-                    <span class="form-message"></span>
-                  </div>
-              
-                  <div class="form-group">
-                    <input id="phone" name="phone" type="tel" placeholder="Điện thoại" class="form-control">
-                    <span class="form-message"></span>
-                  </div>
-              
-                  <div class="form-group">
-                    <input id="address" name="address" type="text" placeholder="Địa chỉ" class="form-control">
-                    <span class="form-message"></span>
-                  </div>
-        
-                  <div class="form-group">
-                    <select id="province" name="province" class="form-control">
-                      <option value="">-- Chọn Tỉnh/ Thành phố --</option>
-                      <option value="hni">Hà Nội</option>
-                      <option value="hpg">Hải Phòng</option>
-                      <option value="dn">Đà Nẵng</option>
-                      <option value="ntr">Nha Trang</option>
-                      <option value="hcm">Hồ Chí Minh</option>
-                    </select>
-                    <span class="form-message"></span>
-                  </div>
-  
-                  <div class="form-group">
-                    <select id="district" name="district" class="form-control">
-                      <option value="">-- Chọn Quận/ Huyện --</option>
-                      <option value="hni">Hà Nội</option>
-                      <option value="hpg">Hải Phòng</option>
-                      <option value="dn">Đà Nẵng</option>
-                      <option value="ntr">Nha Trang</option>
-                      <option value="hcm">Hồ Chí Minh</option>
-                    </select>
-                    <span class="form-message"></span>
-                  </div>
-  
-                  <div class="form-group">
-                    <textarea id="note" class="note-frame" name="description" cols="30" rows="5" placeholder="Ghi chú"></textarea>
-                  </div>
-                </form>
-              </div>
-            </div>
-            <div class="right__checkout">
-              <div class="heading__right">
-                <p>
-                  <i class="fa-solid fa-credit-card"></i>
-                  Thanh toán
-                </p>
-              </div>
-              <div class="payment__way">
-                <input id="choose__way" class="choose__way" type="radio">
-                <label for="choose__way">Thanh toán khi nhận hàng (COD)</label>
-              </div>
-              <button class="btn btn-primary order__checkout-btn">Đặt hàng</button>
-              <a href="./shopping_cart.html" class="back__cart">
-                <i class="fa-solid fa-angle-left"></i>
-                Quay về giỏ hàng
-              </a>
-            </div>
+            </form>
           </div>
         </div>
         <!-- ////////////////////////////////////////////////////////////////////////////////////////////////// -->
@@ -262,27 +267,165 @@
       }
     </script>
     <!-- Validator -->
-     <script src="./pages/user/validator.js"></script>
-     <script>
-         Validator({
-             form: '#form-1',
-             formGroupSelector: '.form-group',
-             errorSelector: '.form-message',
-             rules: [
-                 Validator.isRequired('#fullname', "Vui lòng nhập họ tên đầy đủ."),
-                 Validator.isRequired('#email'),
-                 Validator.isEmail('#email'),
-                 Validator.isRequired('#address'),
-                 Validator.isRequired('#phone'),
-                 Validator.isPhoneNumber('#phone'),
-                 Validator.isRequired('#province', 'Vui lòng chọn Tỉnh/ TP.'),
-                 Validator.isRequired('#district', 'Vui lòng chọn Quận/ Huyện.'),
-             ],
-             onSubmit(data) {
-                 console.log(data);
-             }
-         });
-     </script>
+    <script src="./pages/user/validator.js"></script>
+    <script>
+        Validator({
+            form: '#form-1',
+            formGroupSelector: '.form-group',
+            errorSelector: '.form-message',
+            rules: [
+                Validator.isRequired('#fullname', "Vui lòng nhập họ tên đầy đủ."),
+                Validator.isRequired('#email'),
+                Validator.isEmail('#email'),
+                Validator.isRequired('#address'),
+                Validator.isRequired('#phone'),
+                Validator.isPhoneNumber('#phone'),
+                Validator.isRequired('input[name="choose__way"]', 'Vui lòng chọn phương thức thanh toán.'),
+                Validator.isRequired('#province', 'Vui lòng chọn Tỉnh/ TP.'),
+                Validator.isRequired('#district', 'Vui lòng chọn Quận/ Huyện.'),
+            ],
+            onSubmit(data) {
+                if(data) {
+                  console.log(data);
+                  console.log(totalBill)
+                  // var url = "https://fast-food-order-api.herokuapp.com/products";
+                  var url = "http://localhost:3000/orders";
+                  var order = {
+                    "customerName": data.fullname,
+                    "customerEmail": data.email,
+                    "customerPhone": data.phone,
+                    "customerAddress": data.address,
+                    "customerDistrict": data.calc_shipping_district,
+                    "customerProvince": data.calc_shipping_provinces,
+                    "status": 'Chờ xác nhận',
+                    "methodPayment": data.choose__way,
+                    "totalBill": totalBill
+                  }
+                  var option = {
+                    method: "post",
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(order)
+                  };
+
+                  fetch(url, option)
+                  .then(res => res.json())
+                  .then(order => {
+                    // console.log("order:", order);
+                    alert('Đơn hàng đang được xử lý!');
+                    var orderId = order.id;
+                    handleSaveOrder(orderId);
+                  });
+                }
+            }
+        });
+
+        function handleSaveOrder(orderId) {
+          var cart = JSON.parse(localStorage.getItem('cart'))
+          
+          cart.forEach(product => {
+            var detailsOrder = {
+              "ordersId": orderId,
+              "productsId": product.id,
+              "quantityProductsId": product.quantity,
+              "unitPrice": product.price
+            }
+
+            // var url = "https://fast-food-order-api.herokuapp.com/products";
+            var url = "http://localhost:3000/detailOrders";
+            var option = {
+              method: "post",
+              headers: {
+                  'Content-Type': 'application/json',
+              },
+              body: JSON.stringify(detailsOrder)
+            }; 
+
+            fetch(url, option)
+            .then(res => res.json())
+            .then(detailsOrder => {
+              // console.log("detailsOrder:", detailsOrder);
+            });
+          });
+        }
+    </script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/gh/vietblogdao/js/districts.min.js'></script>
+    <script>
+      if (address_2 = localStorage.getItem('address_2_saved')) {
+        $('select[name="calc_shipping_district"] option').each(function() {
+          if ($(this).text() == address_2) {
+            $(this).attr('selected', '')
+          }
+        })
+        $('input.billing_address_2').attr('value', address_2)
+      }
+      if (district = localStorage.getItem('district')) {
+        $('select[name="calc_shipping_district"]').html(district)
+        $('select[name="calc_shipping_district"]').on('change', function() {
+          var target = $(this).children('option:selected')
+          target.attr('selected', '')
+          $('select[name="calc_shipping_district"] option').not(target).removeAttr('selected')
+          address_2 = target.text()
+          $('input.billing_address_2').attr('value', address_2)
+          district = $('select[name="calc_shipping_district"]').html()
+          localStorage.setItem('district', district)
+          localStorage.setItem('address_2_saved', address_2)
+        })
+      }
+      $('select[name="calc_shipping_provinces"]').each(function() {
+        var $this = $(this),
+          stc = ''
+          
+        c.forEach(function(i, e) {
+          e += +1
+          // stc += '<option value=' + i + '>' + i + '</option>'
+          stc += `<option value='${i}'>${i}</option>`
+          $this.html('<option value="">Tỉnh / Thành phố</option>' + stc)
+          if (address_1 = localStorage.getItem('address_1_saved')) {
+            $('select[name="calc_shipping_provinces"] option').each(function() {
+              if ($(this).text() == address_1) {
+                $(this).attr('selected', '')
+              }
+            })
+            $('input.billing_address_1').attr('value', address_1)
+          }
+          $this.on('change', function(i) {
+            i = $this.children('option:selected').index() - 1;
+            var str = '',
+              r = $this.val()
+            if (r != '') {
+              arr[i].forEach(function(el) {
+                str += '<option value="' + el + '">' + el + '</option>'
+                $('select[name="calc_shipping_district"]').html('<option value="">Quận / Huyện</option>' + str)
+              })
+              var address_1 = $this.children('option:selected').text()
+              var district = $('select[name="calc_shipping_district"]').html()
+              localStorage.setItem('address_1_saved', address_1)
+              localStorage.setItem('district', district)
+
+              $('select[name="calc_shipping_district"]').on('change', function() {
+                var target = $(this).children('option:selected')
+                target.attr('selected', '')
+                $('select[name="calc_shipping_district"] option').not(target).removeAttr('selected')
+                var address_2 = target.text()
+                $('input.billing_address_2').attr('value', address_2)
+                district = $('select[name="calc_shipping_district"]').html()
+                localStorage.setItem('district', district)
+                localStorage.setItem('address_2_saved', address_2)
+              })
+            } else {
+              $('select[name="calc_shipping_district"]').html('<option value="">Quận / Huyện</option>')
+              district = $('select[name="calc_shipping_district"]').html()
+              localStorage.setItem('district', district)
+              localStorage.removeItem('address_1_saved', address_1)
+            }
+          })
+        })
+      })
+    </script>
   </body>
 </html>
 

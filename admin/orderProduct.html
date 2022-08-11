@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Quản lí đơn hàng
+    </title>
+    <link rel="shortcut icon" href="/images/logo-mb.png" type="image/png">
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- APP CSS -->
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <div class="sidebar-logo">
+            <img src="https://mcdn.nhanh.vn/store2/71503/logo_1648529413_Green%20Quality%20Tea%20Instagram%20Post.png" alt="Comapny logo">
+            <div class="sidebar-close" id="sidebar-close">
+                <i class='bx bx-left-arrow-alt'></i>
+            </div>
+        </div>
+        <div class="sidebar-user">
+            <div class="sidebar-user-info">
+                <img src="./images/user-image-1.png" alt="User picture" class="profile-image">
+                <div class="sidebar-user-name">
+                    Nguyễn Ngọc Hợp
+                </div>
+            </div>
+            <button class="btn btn-outline">
+                <i class='bx bx-log-out bx-flip-horizontal'></i>
+            </button>
+        </div>
+        <!-- SIDEBAR MENU -->
+        <ul class="sidebar-menu">
+            <li class="sidebar-submenu">
+                <a href="./index.html" class="sidebar-menu-dropdown">
+                    <i class='bx bx-home'></i>
+                    <span>Bảng điều khiển</span>
+                </a>
+            </li>
+            <li class="sidebar-submenu">
+                <a href="./listProduct.html" class="sidebar-menu-dropdown">
+                    <i class='bx bx-list-ul'></i>
+                    <span>Danh sách sản phẩm</span>
+                </a>
+            </li>
+            <li class="sidebar-submenu">
+                <a href="./addProduct.html" class="sidebar-menu-dropdown">
+                    <i class='bx bx-book-add'></i>
+                    <span>Thêm sản phẩm</span>
+                </a>
+            </li>
+            <li class="sidebar-submenu">
+                <a href="#" class="sidebar-menu-dropdown active">
+                    <i class='bx bx-memory-card'></i>
+                    <span>Đơn hàng</span>
+                </a>
+            </li>
+            <li class="sidebar-submenu">
+                <a href="#" class="sidebar-menu-dropdown">
+                    <i class='bx bx-cog'></i>
+                    <span>Cài đặt</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    <li>
+                        <a href="#" class="darkmode-toggle" id="darkmode-toggle">
+                            Ban đêm
+                            <span class="darkmode-switch"></span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <!-- END SIDEBAR MENU -->
+    </div>
+    <!-- END SIDEBAR -->
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+        <div class="main-header">
+            <div class="mobile-toggle" id="mobile-toggle">
+                <i class='bx bx-menu-alt-right'></i>
+            </div>
+            <div class="main-title">
+                Quản lí đơn hàng
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="row">
+                <div class="col-12 col-md-10 col-sm-12">
+                    <!-- List Details Order -->
+                    <div class="box">
+                        <div class="box-header">
+                            Recent orders
+                        </div>
+                        <div class="box-body overflow-scroll">
+                            <table width="100%" class="table_list-order">
+                                <thead>
+                                    <tr>
+                                        <th style="padding: 20px;">ID</th>
+                                        <th style="width: 25%;">Tên khách hàng</th>
+                                        <th>Email</th>
+                                        <th>Địa chỉ</th>
+                                        <th>Số điện thoại</th>
+                                        <th>Trạng thái</th>
+                                        <th>Thanh toán</th>
+                                        <th>Tổng tiền</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- <tr>
+                                        <td>#2345</td>
+                                        <td>
+                                            <div class="order-owner">
+                                                <img src="./images/user-image.jpg" alt="user image">
+                                                <span>Nguyễn Ngọc Hợp</span>
+                                            </div>
+                                        </td>
+                                        <td>ngochop2704@gmail.com</td>
+                                        <td>Đắc Lộc, Vĩnh Phương, Nha Trang, Khánh Hòa</td>
+                                        <td>0379727284</td>
+                                        <td>
+                                            <span class="order-status order-ready">
+                                                Ready
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div class="payment-status payment-pending">
+                                                <div class="dot"></div>
+                                                <span>Momo</span>
+                                            </div>
+                                        </td>
+                                        <td>$123.45</td>
+                                    </tr> -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END MAIN CONTENT -->
+
+    <div class="overlay"></div>
+
+    <!-- SCRIPT -->
+    <!-- APP JS -->
+    <script src="./js/app.js"></script>
+
+    <script>
+        var url = "https://fast-food-order-api.herokuapp.com/orders";
+        // var url = "http://localhost:3000/orders";
+        var tableListOrder = document.querySelector('.table_list-order tbody')
+        fetch(url)
+        .then(res => res.json())
+        .then(orders => {
+            var htmls = orders.map(order => {
+                return `
+                    <tr>
+                        <td>${order.id}</td>
+                        <td>
+                            <div class="order-owner">
+                                <img src="./images/user-image-${order.id}.png" alt="user image">
+                                <span>${order.customerName}</span>
+                            </div>
+                        </td>
+                        <td>${order.customerEmail}</td>
+                        <td>${order.customerAddress}, ${order.customerDistrict}, ${order.customerProvince}</td>
+                        <td>${order.customerPhone}</td>
+                        <td>
+                            <span class="order-status order-ready">
+                                ${order.status}
+                            </span>
+                        </td>
+                        <td>
+                            <div class="payment-status payment-pending">
+                                <div class="dot"></div>
+                                <span>${order.methodPayment===1 ? 'Trực tiếp' : order.methodPayment===2 ? 'Momo' : 'Internet Banking'}</span>
+                            </div>
+                        </td>
+                        <td>${(order.totalBill).toLocaleString()+'₫'}</td>
+                    </tr>               
+                `;
+            });
+            tableListOrder.innerHTML = htmls.join('');
+        })
+    </script>
+</body>
+
+</html>
